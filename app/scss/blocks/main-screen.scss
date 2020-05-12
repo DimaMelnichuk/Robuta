@@ -1,0 +1,158 @@
+.main-screen {
+
+	// .main-screen__content
+
+	&__content {
+		display: flex;
+		justify-content: center;
+	}
+
+	// .main-screen__column
+
+	&__column {
+		flex: 0 1 50%;
+	}
+
+	// .main-screen__text
+
+	&__text {
+		max-width: 510px;
+		margin-left: auto;
+		padding: 110px 0px 0px 0px;
+		margin-right: 110px;
+	}
+
+	// .main-screen__text-title
+
+	&__text-title {
+		font-family: $font-secondary;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 56px;
+		color: $blue-darken;
+		margin: 0px 0px 16px 0px;
+
+		span {
+			display: block;
+			color: $orange;
+		}
+	}
+
+	// .main-screen__text-subtitle
+
+	&__text-subtitle {
+		font-family: $font-third;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		color: $blue;
+		margin: 0px 0px 40px 0px;
+	}
+
+	// .main-screen__text-descr
+
+	&__text-descr {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 26px;
+		margin: 0px 0px 45px 0px;
+		color: $blue-darken;
+	}
+
+	// .main-screen__text-feedback
+
+	&__text-feedback {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		color: #5a7797;
+	}
+
+	&__text-link {
+		text-decoration: underline;
+		font-weight: 700;
+		color: #5a7797;
+	}
+
+	// .main-screen__column-inner
+
+	&__column-inner {
+		display: flex;
+	}
+
+	// .main-screen__box
+
+	&__box {
+
+	}
+
+	&__box-img {
+		height: 100%;
+		width: 100%;
+		object-position: center;
+		object-fit: cover;
+	}
+
+	// .main-screen__box--sm
+
+	&__box--sm {
+		width: 211px;
+		height: 182px;
+		background-color: #dddddd;
+		float: right;
+	}
+
+	// .main-screen__box--bg
+
+	&__box--bg {
+		width: 422px;
+		height: 567px;
+		background-color: #dddddd;
+	}
+
+	// .main-screen__work
+
+	&__work {
+		display: flex;
+		flex-direction: column;
+		margin-left: -95px;
+		width: 230px;
+		height: 230px;
+		padding: 35px 15px 35px 30px;
+		background-color: $orange;
+	}
+
+	// .main-screen__text
+
+	&__work-text {
+		flex: 1 1 auto;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		color: $blue-darken;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	// .main-screen__link
+
+	&__work-link {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 26px;
+		text-transform: uppercase;
+		color: $blue-darken;
+
+		&:hover {
+			border-bottom: 1px solid $blue-darken;
+		}
+
+		span {
+			font-size: 19px;
+			margin-left: 30px;
+		}
+	}
+
+}

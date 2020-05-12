@@ -1,0 +1,22 @@
+.text {
+	text-align: center;
+	// .text__title
+
+	&__title {
+		color: $blue-darken;
+		font-family: $font-secondary;
+		font-size: 40px;
+		font-weight: 700;
+		margin: 40px 0px 15px 0px;
+	}
+
+	// .text__descr
+
+	&__descr {
+		color: #5a7797;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		margin: 0px 0px 50px 0px;
+	}
+}

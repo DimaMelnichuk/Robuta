@@ -1,0 +1,30 @@
+.slider {
+
+	&__item {
+		height: 100vh;
+	}
+}
+
+.slick-dots{
+	position: absolute;
+	left: 60px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.slick-dots li:not(:last-child){
+	margin: 0px 0px 19px 0px;
+}
+
+.slick-dots li.slick-active button{
+	background-color: #5a7797;
+}
+
+.slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #5a7797;
+	background-color: transparent;
+	padding: 0;
+	outline: none;
+}
