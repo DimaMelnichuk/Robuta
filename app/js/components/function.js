@@ -12,18 +12,25 @@ $(function(){
 	});
 
 	/***************** Slider ********************/
-	$('.slider').on(`init reInit`, function(event, slick) {
+	$('.page-slider').on(`init reInit`, function(event, slick) {
 		$('.counter').text(1 + ' / ' + slick.slideCount);
 	 })
-	 $('.slider').on(`afterChange`, function(event, slick, currentSlide, nextSlide) {
+	 $('.page-slider').on(`afterChange`, function(event, slick, currentSlide, nextSlide) {
 		$('.counter').text(currentSlide + 1 + ' / ' + slick.slideCount);
 	 })
-	 $('.slider').slick({
+	 $('.page-slider').slick({
 		dots: true,
 		arrows: false,
 		vertical: true,
 		verticalSwiping: true,
 	 });
+
+	 $('.screen-2__slider').slick({
+		dots: true,
+		arrows: false,
+		fade: true,
+	 });
+	
  
 });
 
