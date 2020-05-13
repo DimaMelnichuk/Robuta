@@ -30,6 +30,19 @@ $(function(){
 		arrows: false,
 		fade: true,
 	 });
+
+	 $('.screen-4__slider').slick({
+		infinity: true,
+		fade: true,
+		asNavFor: '.screen-4__dotshead',
+	 });
+
+	 $('.screen-4__dotshead').slick({
+		infinity: true,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		asNavFor: '.screen-4__slider',
+	 });
 	
  
 });
