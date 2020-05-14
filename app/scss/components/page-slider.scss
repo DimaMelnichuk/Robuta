@@ -49,3 +49,31 @@
 	}
 
 }
+
+.page-slider .screen-5{
+	.slick-dots {
+		left: 50%;
+		top: 120%;
+		transform: translateX(-50%);
+	}
+
+	.slick-dots li{
+		display: inline-block;
+
+		&:not(:last-child){
+			margin: 0px 19px 0px 0px;
+		}
+	}
+
+	.slick-dots button{
+		background-color: #e1e3e4;
+		border: none;
+	}
+
+	.slick-current {
+		.screen-5-item__box {
+			border-top: 3px solid $orange;
+		}
+	}
+
+}

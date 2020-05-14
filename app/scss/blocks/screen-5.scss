@@ -1,0 +1,61 @@
+.screen-5 {
+	height: 100%;
+	background-color: #f1f4fb;
+	background-image: linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
+	
+	// .screen-5__slider
+
+	&__slider {
+
+		.slick-slide:nth-child(even) .screen-5-item__box{
+			margin-top: 30px;
+		}
+	}
+	
+	// .screen-5__slider-item
+
+	&__slider-item {
+
+	}
+}
+
+
+
+.screen-5-item {
+
+	// .screen-5-item__box
+
+	&__box {
+		width: 370px;
+		height: 400px;
+		background-color: #ffffff;
+		text-align: center;
+		padding: 45px;
+	}
+
+	// .screen-5-item__box-img
+
+	&__box-img {
+		height: 100px;
+		width: 100px;
+		margin: 0 auto 50px;
+	}
+
+	// .screen-5-item__box-title
+
+	&__box-title {
+		color: $blue-darken;
+		font-size: 22px;
+		font-weight: 700;
+		margin: 0px 0px 20px 0px;
+	}
+
+	// .screen-5-item__box-subtitle
+
+	&__box-subtitle {
+		color: #5a7797;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+	}
+}
