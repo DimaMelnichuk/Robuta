@@ -77,3 +77,18 @@
 	}
 
 }
+
+.page-slider .screen-6{
+	.slick-dots {
+		left: 0;
+		top: 100%;
+	}
+
+	.slick-dots li{
+		display: inline-block;
+
+		&:not(:last-child){
+			margin: 0px 19px 0px 0px;
+		}
+	}
+}

@@ -8,6 +8,9 @@
 	// .screen-6__slider
 
 	&__slider {
+		position: relative;
+		width: 1095px;
+		margin: 105px auto 0;
 	}
 
 	// .screen-6__slider-item
@@ -20,6 +23,7 @@
 	// .screen-6-slider__inner
 
 	&__inner {
+		display: flex;
 	}
 
 	// .screen-6-slider__text
@@ -30,25 +34,49 @@
 	// .screen-6-slider__title
 
 	&__title {
+		color: #07335d;
+		font-family: $font-secondary;
+		font-size: 40px;
+		font-weight: 700;
+		margin: 0px 0px 55px 0px;
 	}
 
 	// .screen-6-slider__descr
 
 	&__descr {
+		color: #07335d;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 28px;
+		margin: 0px 0px 40px 0px;
 	}
 
 	// .screen-6-slider__name
 
 	&__name {
+		color: #07335d;
+		font-size: 16px;
+		line-height: 26px;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin: 0px 0px 25px 0px;
 	}
 
 	// .screen-6-slider__job
 
 	&__job {
+		color: #0cc7dd;
+		font-family: $font-third;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
 	}
 
 	// .screen-6-slider__img
 
 	&__img {
+		width: 670px;
+		height: 446px;
+		margin: 0px 0px 0px 110px;
 	}
 }

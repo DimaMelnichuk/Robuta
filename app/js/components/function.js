@@ -30,12 +30,6 @@ $(function(){
 		arrows: false,
 		fade: true,
 	 });
-	 $('.screen-5__slider').slick({
-		dots: true,
-		arrows: false,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-	 });
 
 	 $('.screen-4__slider').slick({
 		fade: true,
@@ -46,6 +40,19 @@ $(function(){
 		slidesToShow: 4,
 		slidesToScroll: 4,
 		asNavFor: '.screen-4__slider',
+	 });
+
+	 $('.screen-5__slider').slick({
+		dots: true,
+		arrows: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+	 });
+
+	 $('.screen-6__slider').slick({
+		dots: true,
+		arrows: false,
+		fade: true,
 	 });
 	
  
