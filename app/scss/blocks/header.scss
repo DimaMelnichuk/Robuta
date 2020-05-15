@@ -12,38 +12,41 @@
 		align-items: center;
 		height: 130px;
 		position: relative;
+
+		@media (max-width: 1400px) {
+			height: 80px;
+		}
 	}
 
 	// .header__logo
 
 	&__logo {
-		color: #fff;
 		position: relative;
 		z-index: 5;
 	}
 
-		// .header__lang
+	// .header__lang
 
-		&__lang {
+	&__lang {
+	}
+
+	// .header__lang-btn
+
+	&__lang-btn {
+		background: none;
+		color: #07335d;
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+		padding: 5px 7px;
+
+		&:not(:last-child) {
+			margin: 0px 20px 0px 0px;
 		}
-	
-		// .header__lang-btn
-	
-		&__lang-btn {
-			background: none;
-			color: #07335d;
-			font-size: 16px;
-			font-weight: 700;
-			text-transform: uppercase;
-			padding: 5px 7px;
 
-			&:not(:last-child) {
-				margin: 0px 20px 0px 0px;
-			}
-
-			&--active {
-				background: $orange;
-			}
+		&--active {
+			background: $orange;
 		}
+	}
 
 }

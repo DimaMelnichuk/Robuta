@@ -3,8 +3,6 @@
 	font-family: 'CallingCode';
 	src: url('../fonts/CallingCode-Regular.woff2') format('woff2')
 		 url('../fonts/CallingCode-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
 }
 
 @font-face {
@@ -17,7 +15,7 @@
 @font-face {
 	font-family: 'Metropolis';
 	src: url('../fonts/Metropolis-Medium.woff2') format('woff2')
-		 url('../fonts/Metropolis-Medium.woff') format('woff');
+		  url('../fonts/Metropolis-Medium.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -25,6 +23,13 @@
 	font-family: 'Metropolis';
 	src: url('../fonts/Metropolis-Regular.woff2') format('woff2')
 		 url('../fonts/Metropolis-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Metropolis';
+	src: url('../fonts/Metropolis-SemiBold.woff2') format('woff2')
+		 url('../fonts/Metropolis-SemiBold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }

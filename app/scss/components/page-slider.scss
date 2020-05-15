@@ -7,8 +7,12 @@
 	.slick-dots{
 		position: absolute;
 		left: 60px;
-		top: 50%;
+		top: calc(50% - 100px);
 		transform: translateY(-50%);
+
+		@media (max-width: 1400px) {
+			left: 15px;
+		}
 	}
 	.slick-dots li:not(:last-child){
 		margin: 0px 0px 19px 0px;

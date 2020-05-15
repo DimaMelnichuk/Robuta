@@ -7,6 +7,11 @@
 	font-weight: 700;
 	line-height: 24px;
 
+	@media (max-width: 1400px) {
+		left: 15px;
+		bottom: 30px;
+	}
+
 	span {
 		display: block;
 	}
