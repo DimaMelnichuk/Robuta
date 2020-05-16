@@ -32,6 +32,7 @@ $(function(){
 	 });
 
 	 $('.screen-4__slider').slick({
+		arrows: false,
 		fade: true,
 		asNavFor: '.screen-4__dotshead',
 	 });
@@ -47,6 +48,15 @@ $(function(){
 		arrows: false,
 		slidesToShow: 4,
 		slidesToScroll: 1,
+		responsive: [
+			{
+			  breakpoint: 1600,
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			  }
+			}
+		 ]	
 	 });
 
 	 $('.screen-6__slider').slick({

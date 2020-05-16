@@ -1,11 +1,19 @@
 .screen-4 {
-
+	height: 100%;
+	background: 
+	url(../img/decor/lines-yellow-sm.png) -3% 70% no-repeat,
+	url(../../img/decor/lines-blue-b.png) 104% 6% no-repeat;
+	
 	// .screen-4__inner
 
 	&__slider-inner {
 		display: flex;
 		justify-content: center;
 		margin: 115px 0px 0px 0px;
+
+		@media (max-width: 1400px) {
+			margin: 50px 0 0 0;
+		}
 	}
 
 	// .screen-4__column
@@ -50,15 +58,32 @@
 		height: 470px;
 		background-color: #dddddd;
 		margin: 0px 0px 0px 115px;
+		object-fit: cover;
+		 object-position: center;
+		 
+		 @media (max-width: 1400px) {
+			width: 570px;
+			height: 370px;
+			margin: 0 0 0 50px;
+		 }
 	}
 
 	// .screen-4__dotshead
 
 	&__dotshead {
-		left: 200px;
-		bottom: -77px;
+		left: 230px;
+		bottom: -200px;
 		max-width: 1100px;
 		width: 100%;
+
+		@media (max-width: 1600px) {
+			left: 130px;
+		}
+
+		@media (max-width: 1400px) {
+			bottom: -50px;
+		}
+
 		.slick-current {
 			.screen-4__dotshead-box {
 				color: $orange;

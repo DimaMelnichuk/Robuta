@@ -1,15 +1,15 @@
 .main-screen {
 	position: relative;
-	background: url(../../img/decor/wave-line-red.png) 85% 93% no-repeat, 
-					url(../../img/decor/wave-line-yellow.png) 40% 93% no-repeat, 
-					url(../../img/decor/line-green.png) 58% 22% no-repeat,
-					url(../../img/decor/lines-blue.png) 100% 83% no-repeat;
+	background: url(../img/decor/wave-line-red.png) 85% 93% no-repeat, 
+					url(../img/decor/wave-line-yellow.png) 40% 93% no-repeat, 
+					url(../img/decor/line-green.png) 58% 22% no-repeat,
+					url(../img/decor/lines-blue.png) 100% 83% no-repeat;
 	background-size: auto, auto, cover;
 
 	@media (max-width: 1600px) {
-		background: url(../../img/decor/wave-line-yellow.webp) 44% 100% no-repeat,
-						url(../../img/decor/line-green.webp) 53% 26% no-repeat,
-						url(../../img/decor/lines-blue.webp) 100% 83% no-repeat;
+		background: url(../img/decor/wave-line-yellow.webp) 44% 100% no-repeat,
+						url(../img/decor/line-green.webp) 53% 26% no-repeat,
+						url(../img/decor/lines-blue.webp) 100% 83% no-repeat;
 	}
 
 	// .main-screen__content

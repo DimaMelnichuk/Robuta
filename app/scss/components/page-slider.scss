@@ -16,6 +16,10 @@
 	}
 	.slick-dots li:not(:last-child){
 		margin: 0px 0px 19px 0px;
+
+		@media (max-width: 1400px) {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 	
 	.slick-dots li.slick-active button{
@@ -84,7 +88,7 @@
 
 .page-slider .screen-6{
 	.slick-dots {
-		left: 0;
+		left: 3px;
 		top: 100%;
 	}
 

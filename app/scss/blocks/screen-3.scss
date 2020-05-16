@@ -1,8 +1,16 @@
 .screen-3 {
 	height: 100%;
-	background-color: #f1f4fb;
-	background-image: linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
+	background: 
+	url(../img/decor/lines-blue.png) 104% 6% no-repeat,
+	linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
 	
+
+	@media (max-width: 1600px) {
+		background: 
+		url(../img/decor/lines-blue.png) 108% 6% no-repeat,
+		linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
+		
+	}
 	// .screen-3__inner
 
 	&__inner {
@@ -22,6 +30,11 @@
 		border-top: 3px solid;
 		margin: 0px 15px;
 
+		@media (max-width: 1400px) {
+			height: 410px;
+			padding: 20px 15px 15px 15px;
+		}
+
 		&--first {
 			border-color: $red;
 		}
@@ -40,6 +53,11 @@
 		font-weight: 700;
 		color: $blue-darken;
 		margin: 0px 0px 55px 0px;
+
+		@media (max-width: 1400px) {
+			font-size: 20px;
+    		margin: 0 0 25px 0;
+		}
 	}
 
 	// .screen-3__item
@@ -49,6 +67,10 @@
 
 		&:not(:last-child) {
 			margin: 0px 0px 35px 0px;
+
+			@media (max-width: 1400px) {
+				margin: 0px 0px 25px 0px;
+			}
 		}
 	}
 
@@ -59,6 +81,12 @@
 		height: 65px;
 		background-color: #dddddd;
 		margin: 0px 25px 0px 0px;
+
+		@media (max-width: 1400px) {
+			width: 55px;
+			height: 55px;
+			margin: 0 15px 0 0;
+		}
 	}
 
 	// .screen-3__item-title
@@ -69,6 +97,11 @@
 		line-height: 26px;
 		color: $blue;
 		margin: 0px 0px 5px 0px;
+
+		@media (max-width: 1400px) {
+			font-size: 14px;
+    		line-height: 18px;
+		}
 	}
 
 	// .screen-3__item-subtitle
@@ -80,6 +113,10 @@
 		line-height: 22px;
 		text-transform: uppercase;
 		margin: 0px 0px 10px 0px;
+
+		@media (max-width: 1400px) {
+			margin: 0 0 0px 0;
+		}
 	}
 
 	// .screen-3__item-descr
@@ -89,5 +126,10 @@
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
+
+		@media (max-width: 1400px) {
+			font-size: 15px;
+    		line-height: 20px;
+		}	
 	}
 }

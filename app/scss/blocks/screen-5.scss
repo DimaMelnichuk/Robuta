@@ -1,6 +1,5 @@
 .screen-5 {
 	height: 100%;
-	background-color: #f1f4fb;
 	background-image: linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
 	
 	// .screen-5__slider
@@ -31,6 +30,14 @@
 		background-color: #ffffff;
 		text-align: center;
 		padding: 45px;
+		margin-left: 70px;
+
+		@media (max-width: 1400px) {
+			width: 330px;
+			height: 100%;
+			padding: 30px;
+			margin-left: 85px;
+		}
 	}
 
 	// .screen-5-item__box-img

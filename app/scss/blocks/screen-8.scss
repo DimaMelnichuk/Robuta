@@ -2,23 +2,37 @@
 	position: relative;
 	height: 670px;
 	background-color: #dddddd;
+
+	@media (max-width: 1400px) {
+		height: 400px;
+	}
 	// .screen-8__content
 
 	&__content {
-		margin: 220px auto 0;
-		width: 1320px;
+		margin: 310px auto 0;
+		max-width: 1320px;
 		height: 100%;
 		padding: 80px 70px;
 		background-color: #ffffff;
 		display: flex;
 		justify-content: space-between;
 		border-top: 3px solid $orange;
+
+		@media (max-width: 1400px) {
+			margin: 100px auto 0;
+			max-width: 1000px;
+			padding: 40px;
+		}
 	}
 
 	// .screen-8__column
 
 	&__column {
 		flex: 0 1 35%;
+
+		@media (max-width: 1400px) {
+			flex: 0 1 45%;
+		}
 	}
 
 	// .screen-8__form
@@ -89,6 +103,10 @@
 		font-size: 40px;
 		font-weight: 700;
 		margin: 0px 0px 38px 0px;
+
+		@media (max-width: 1400px) {
+			margin: 0 0 20px 0;
+		}
 	}
 
 	// .screen-8__text
@@ -99,6 +117,10 @@
 		font-weight: 400;
 		line-height: 26px;
 		margin: 0px 0px 35px 0px;
+
+		@media (max-width: 1400px) {
+			margin: 0 0 20px 0;
+		}
 	}
 
 	&__text__address {
@@ -108,7 +130,12 @@
 		font-weight: 400;
 		line-height: 26px;
 		margin: 0px 0px 30px 0px;
+
+		@media (max-width: 1400px) {
+			margin: 0 0 10px 0;
+		}
 	}
+
 	&__text__email {
 		display: block;
 		color: $blue;
@@ -117,13 +144,17 @@
 		font-weight: 400;
 		line-height: 26px;
 		text-decoration: underline;
-		margin: 0px 0px 19px 0px;
+		margin: 0px 0px 10px 0px;
 	}
 	&__text__phone {
 		color: $blue-darken;
 		display: block;
 		font-size: 24px;
 		font-weight: 700;
+
+		@media (max-width: 1400px) {
+			font-size: 20px;
+		}
 	}
 
 	// .screen-8__footer
@@ -131,8 +162,13 @@
 	&__footer {
 		display: flex;
 		position: absolute;
-		bottom: -337px;
-		left: 370px;
+		bottom: -438px;
+		left: 380px;
+
+		@media (max-width: 1400px) {
+			left: 205px;
+			bottom: -183px;
+		}
 	}
 
 	// .screen-8__list-links
@@ -140,6 +176,10 @@
 	&__list-links {
 		display: flex;
 		margin: 0px 450px 0px 0px;
+
+		@media (max-width: 1400px) {
+			margin: 0 240px 0 0;
+		}
 	}
 
 	// .screen-8__item
@@ -148,6 +188,10 @@
 
 		&:not(:last-child) {
 			margin: 0px 40px 0px 0px;
+
+			@media (max-width: 1400px) {
+				margin: 0 25px 0 0;
+			}
 		}
 	}
 
@@ -159,6 +203,10 @@
 		font-weight: 600;
 		line-height: 22px;
 		text-transform: uppercase;
+
+		@media (max-width: 1400px) {
+			font-size: 15px;
+		}
 	}
 
 	// .screen-8__copiryght
