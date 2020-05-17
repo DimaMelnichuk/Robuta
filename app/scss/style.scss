@@ -20,6 +20,7 @@
 @import "blocks/screen-4";
 @import "blocks/screen-5";
 @import "blocks/screen-6";
+@import "blocks/screen-7";
 @import "blocks/screen-8";
 
 // Components
@@ -70,6 +71,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   @media (max-width: 1400px) {
 	  padding: 0px 15px;
   }
+
+  @media (max-width: 480px) {
+	  max-width: 411px;
+	  margin: 0 auto;
+  }
 }
 body.lock {
 	overflow: hidden;
@@ -81,6 +87,11 @@ body.lock {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+
+	@media (max-width: 770px) {
+		overflow: visible;
+		height: 100%;
+	}
 
 	&.loaded {
 

@@ -2,6 +2,10 @@
 
 	&__item {
 		height: 100vh;
+
+		@media (max-width: 770px) {
+			height: 100%;
+		}
 	}
 
 	.slick-dots{

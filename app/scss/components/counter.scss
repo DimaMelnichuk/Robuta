@@ -17,4 +17,8 @@
 		font-size: 23px;
 		line-height: 70px;
 	}
+
+	@media (max-width: 770px) {
+		display: none;
+	}
 }

@@ -30,6 +30,10 @@
 			width: 1050px;
     		padding: 30px 40px;
 		}
+
+		@media (max-width: 770px) {
+			width: 100%;
+		}
 	}
 
 	// .screen-1__content-inner

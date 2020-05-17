@@ -12,6 +12,10 @@
 		bottom: 30px;
 	}
 
+	@media (max-width: 770px) {
+		display: none;
+	}
+
 	span {
 		display: block;
 	}
