@@ -45,6 +45,12 @@
 	.slick-dots {
 		left: 64%;
 		top: 91%;
+
+		@media (max-width: 770px) {
+			left: 50%;
+			top: 104%;
+			transform: translate(-50%);
+		}	
 	}
 
 	.slick-dots li{
@@ -67,6 +73,10 @@
 		left: 50%;
 		top: 120%;
 		transform: translateX(-50%);
+
+		@media (max-width: 770px) {
+			top: 100%;
+		}
 	}
 
 	.slick-dots li{
@@ -94,6 +104,11 @@
 	.slick-dots {
 		left: 3px;
 		top: 100%;
+
+		@media (max-width: 770px) {
+			left: 50%;
+			transform: translate(-50%);
+		}
 	}
 
 	.slick-dots li{

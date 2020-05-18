@@ -1,4 +1,5 @@
 .screen-6 {
+	padding: 0px 0px 50px 0px;
 	height: 100%;
 	background: url(../img/decor/lines-green-light.png) 80% 6% no-repeat;
 	
@@ -20,6 +21,11 @@
 		position: relative;
 		width: 1170px;
 		margin: 105px auto 0;
+
+		@media (max-width: 770px) {
+			margin: 30px auto 0;
+			width: 100%;
+		}
 	}
 
 	// .screen-6__slider-item
@@ -33,6 +39,10 @@
 
 	&__inner {
 		display: flex;
+
+		@media (max-width: 770px) {
+			flex-direction: column-reverse;
+		}
 	}
 
 	// .screen-6-slider__text
@@ -54,6 +64,10 @@
 		@media (max-width: 1400px) {
 			margin: 0 0 35px 0;
 		}
+
+		@media (max-width: 770px) {
+			margin: 0px 0px 10px 0px;
+		}
 	}
 
 	// .screen-6-slider__descr
@@ -68,6 +82,11 @@
 		@media (max-width: 1400px) {
 			margin: 0 0 30px 0;
 			font-size: 15px;
+		}
+
+		@media (max-width: 770px) {
+			margin: 0 0 10px 0;
+			line-height: 24px;
 		}
 	}
 
@@ -102,6 +121,10 @@
 	&__box {
 		position: relative;
 		margin: 0px 0px 0px 110px;
+
+		@media (max-width: 770px) {
+			margin: 0px 0px 30px 0px;
+		}
 	}
 
 	// .screen-6-slider__img
@@ -109,10 +132,16 @@
 	&__img {
 		width: 670px;
 		height: 446px;
+		object-fit: cover;
+		object-position: center;
 
 		@media (max-width: 1400px) {
 			width: 570px;
-			height: 346px;
+			height: 350px;
+		}
+
+		@media (max-width: 770px) {
+			width: 100%;
 		}
 	}
 
@@ -132,5 +161,10 @@
 		bottom: 35px;
 		left: 35px;
 		color: $white;
+
+		@media (max-width: 770px) {
+			bottom: 20px;
+			left: 20px;
+		}
 	}
 }
