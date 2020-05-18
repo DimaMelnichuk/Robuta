@@ -18,7 +18,10 @@
 		url(../img/decor/lines-blue.png) 100% 83% no-repeat;
 	}
 
-
+	@media (max-width: 480px) {
+		padding: 60px 0px 0px 0px;
+		margin: 0px 0px 20px 0px;
+	}
 	// .main-screen__content
 
 	&__content {
@@ -74,6 +77,10 @@
 			line-height: 35px;
 		}
 
+		@media (max-width: 480px) {
+			line-height: 30px;
+		}
+
 		span {
 			display: block;
 			color: $orange;
@@ -93,6 +100,12 @@
 		@media (max-width: 1400px) {
 			margin: 0 0 25px 0;
 		}
+
+		@media (max-width: 480px) {
+			margin: 0 0 10px 0;
+			line-height: 20px;
+			font-size: 15px;
+		}
 	}
 
 	// .main-screen__text-descr
@@ -107,6 +120,11 @@
 		@media (max-width: 1400px) {
 			margin: 0 0 25px 0;
 		}
+
+		@media (max-width: 480px) {
+			margin: 0 0 10px 0;
+			line-height: 20px;
+		}
 	}
 
 	// .main-screen__text-feedback
@@ -116,6 +134,10 @@
 		font-weight: 400;
 		line-height: 26px;
 		color: #5a7797;
+
+		@media (max-width: 480px) {
+			line-height: 20px;
+		}
 	}
 
 	&__text-link {
@@ -208,7 +230,7 @@
 
 		@media (max-width: 480px) {
 			width: 100%;
-			height: 250px;
+			height: 200px;
 			margin: 0px 0px 10px 0px;
 		}
 	}
@@ -275,7 +297,7 @@
 
 		@media (max-width: 480px) {
 			display: inline-block;
-			margin: 10px auto 0;
+			margin: 15px auto 0;
 			font-size: 19px;
 			font-weight: 700;
 			line-height: 26px;
@@ -285,9 +307,4 @@
 
 	}
 
-}
-@media (max-width: 480px) {
-	.webp .main-screen {
-		background: none;
-  }
 }

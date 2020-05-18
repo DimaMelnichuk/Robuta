@@ -12,6 +12,10 @@
 		display: flex;
 		justify-content: center;
 		margin: 0px -11px;
+
+		@media (max-width: 480px) {
+			flex-direction: column;
+		}
 	}
 
 	// .screen-7__column

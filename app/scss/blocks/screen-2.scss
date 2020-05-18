@@ -63,6 +63,10 @@
 		@media (max-width: 770px) {
     		height: 350px;
 		}
+
+		@media (max-width: 480px) {
+			height: 200px;
+		}
 	}
 
 	// .item-slider__btn
@@ -137,12 +141,16 @@
 	&__subtitle {
 		font-family: $font-secondary;
 		color: $blue-darken;
-		font-size: 40px;
+		@include adaptiv-font(40, 28);
 		font-weight: 700;
 		margin: 0px 0px 37px 0px;
 
 		@media (max-width: 770px) {
 			margin: 0 0 20px 0;
+		}
+
+		@media (max-width: 480px) {
+			
 		}
 	}
 

@@ -31,6 +31,10 @@
 		@media (max-width: 770px) {
 			padding: 25px;
 		}
+
+		@media (max-width: 480px) {
+			flex-direction: column;
+		}
 	}
 
 	// .screen-8__column
@@ -208,6 +212,10 @@
 
 		@media (max-width: 770px) {
 			left: 15px;
+		}
+
+		@media (max-width: 480px) {
+			display: none;
 		}
 	}
 

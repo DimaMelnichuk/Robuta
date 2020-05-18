@@ -4,6 +4,12 @@
 	top: 0;
 	left: 0;
 	z-index: 50;
+
+	@media (max-width: 770px) {
+		position: fixed;
+		background: #eff4fe;
+	}
+	
 	// .header__container
 
 	&__container {
@@ -16,6 +22,10 @@
 		@media (max-width: 1400px) {
 			height: 80px;
 		}
+
+		@media (max-width: 480px) {
+			height: 60px;
+		}
 	}
 
 	// .header__logo
@@ -25,9 +35,20 @@
 		z-index: 5;
 	}
 
+	&__logo-link {
+
+		@media (max-width: 480px) {
+			width: 70%;
+		}
+	}
+
 	// .header__lang
 
 	&__lang {
+
+		@media (max-width: 480px) {
+			display: block;
+		}
 	}
 
 	// .header__lang-btn
@@ -40,8 +61,17 @@
 		text-transform: uppercase;
 		padding: 5px 7px;
 
+		@media (max-width: 480px) {
+			font-size: 14px;
+			padding: 0;
+		}
+
 		&:not(:last-child) {
 			margin: 0px 20px 0px 0px;
+
+			@media (max-width: 480px) {
+				margin: 0px 0px 0px 0px;
+			}
 		}
 
 		&--active {

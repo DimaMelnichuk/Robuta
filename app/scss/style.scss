@@ -67,14 +67,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 .container {
   padding: 0 60px;
+  max-width: 1900px;
+  margin: 0 auto;
 
   @media (max-width: 1400px) {
 	  padding: 0px 15px;
-  }
-
-  @media (max-width: 480px) {
-	  max-width: 411px;
-	  margin: 0 auto;
   }
 }
 body.lock {
@@ -110,4 +107,23 @@ body.lock {
 
 .page {
 	flex: 1 1 auto;
+}
+
+.webp {
+	@media (max-width: 480px) {
+		.main-screen {
+			background: none!important;
+		}
+
+		.screen-1 {
+			background: linear-gradient(to top,#fcfdff 0,#eff4fe 100%)!important;
+		}
+
+		.screen-2 {
+			background: none!important;
+		}
+		.screen-3 {
+			background: linear-gradient(to top,#fcfdff 0,#eff4fe 100%)!important;
+		}
+	}
 }
