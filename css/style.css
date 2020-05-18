@@ -2336,6 +2336,24 @@ body.lock {
     line-height: 23px;
   }
 
+  .screen-7__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .screen-8__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .screen-8__footer {
+    display: none;
+  }
+
   .text__descr {
     line-height: 20px;
   }
