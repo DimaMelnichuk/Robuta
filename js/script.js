@@ -59,8 +59,16 @@ $(function(){
 			  breakpoint: 1600,
 			  settings: {
 				slidesToShow: 3,
-				slidesToScroll: 1,
+				slidesToScroll: 1
+				}
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				 slidesToShow: 1,
+				 slidesToScroll: 1
 			  }
+			}
 		 ]	
 	 });
 
@@ -91,3 +99,4 @@ testWebP(function (support) {
 if (document.querySelector('.wrapper')) {
 	document.querySelector('.wrapper').classList.add('loaded');
 }
+;
