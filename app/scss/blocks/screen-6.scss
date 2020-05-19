@@ -56,8 +56,8 @@
 	&__title {
 		color: #07335d;
 		font-family: $font-secondary;
-		font-size: 40px;
-		line-height: 45px;
+		@include adaptiv-font(40, 28);
+		line-height: (45 / 40);
 		font-weight: 700;
 		margin: 0px 0px 55px 0px;
 
@@ -67,6 +67,10 @@
 
 		@media (max-width: 770px) {
 			margin: 0px 0px 10px 0px;
+		}
+
+		@media (max-width: px) {
+			
 		}
 	}
 
@@ -143,6 +147,10 @@
 		@media (max-width: 770px) {
 			width: 100%;
 		}
+
+		@media (max-width: 480px) {
+			height: 250px;
+		}
 	}
 
 	// .screen-6-slider__link
@@ -165,6 +173,12 @@
 		@media (max-width: 770px) {
 			bottom: 20px;
 			left: 20px;
+		}
+
+		@media (max-width: 480px) {
+			bottom: 10px;
+			 left: 10px;
+			 font-size: 15px;
 		}
 	}
 }

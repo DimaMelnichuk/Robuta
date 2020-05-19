@@ -8,6 +8,17 @@
 	@media (max-width: 770px) {
 		position: fixed;
 		background: #eff4fe;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #eff4fe;
+			z-index: 3;
+		}
 	}
 	
 	// .header__container
@@ -45,6 +56,8 @@
 	// .header__lang
 
 	&__lang {
+		position: relative;
+    	z-index: 3;
 
 		@media (max-width: 480px) {
 			display: block;

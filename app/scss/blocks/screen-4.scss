@@ -75,6 +75,10 @@
 			line-height: 20px;
 			margin: 0px 0px 30px 0px;
 		}
+
+		@media (max-width: 480px) {
+			margin: 0 0 20px 0;
+		}
 	}
 
 	// .screen-4__btn
@@ -95,7 +99,7 @@
 		background-color: #dddddd;
 		margin: 0px 0px 0px 115px;
 		object-fit: cover;
-		 object-position: center;
+		object-position: center;
 		 
 		@media (max-width: 1400px) {
 			width: 570px;
@@ -107,6 +111,11 @@
 			width: 100%;
 			margin: 0 0 30px 0px;
 			height: 350px;
+		}
+		
+		@media (max-width: 480px) {
+			margin: 0 0 15px 0;
+    		height: 250px;
 		}
 	}
 
@@ -139,11 +148,14 @@
 	}
 
 	&__dotshead-box {
-		height: 41px;
 		height: 44px;
 		width: 200px;
 		position: relative;
 		color: #6e8eb1;
+
+		@media (max-width: 480px) {
+			width: 50px;
+		}
 	}
 
 	// .screen-4__dotshead-number
@@ -152,11 +164,19 @@
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 26px;
+
+		@media (max-width: 480px) {
+			font-size: 18px;
+		}
 	}
 
 	// .screen-4__dotshead-name
 
 	&__dotshead-name {
 		font-weight: 700;
+
+		@media (max-width: 480px) {
+			font-size: 14px;
+		}
 	}
 }

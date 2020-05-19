@@ -47,6 +47,11 @@
 		@media (max-width: 770px) {
 			width: 100%;
 		}
+
+		@media (max-width: 480px) {
+			height: 181px;
+			margin: 0 0 24px 0;
+		}
 	}
 
 	&__img--sm {
@@ -80,6 +85,11 @@
 
 		@media (max-width: 770px) {
 			width: 300px;
+		}
+
+		@media (max-width: 480px) {
+			width: 250px;
+			bottom: 23px;
 		}
 	}
 
@@ -143,6 +153,11 @@
 			font-size: 18px;
 			line-height: 22px;
 		}
+
+		@media (max-width: 480px) {
+			font-size: 15px;
+			line-height: 17px;
+		}
 	}
 
 	&__text-title--sm {
@@ -203,6 +218,10 @@
 		span {
 			font-size: 19px;
 			margin-left: 15px;
+
+			@media (max-width: 480px) {
+				margin: 0;
+			}
 		}
 
 		&:hover {

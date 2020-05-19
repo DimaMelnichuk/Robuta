@@ -9,6 +9,10 @@
 
 		.slick-slide:nth-child(even) .screen-5-item__box{
 			margin-top: 30px;
+
+			@media (max-width: 480px) {
+				margin-top: 0;
+			}
 		}
 	}
 	
@@ -45,6 +49,10 @@
 			width: 250px;
 			padding: 20px;
 			margin-left: 0;
+		}
+
+		@media (max-width: 480px) {
+			width: 100%;
 		}
 	}
 
