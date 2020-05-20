@@ -227,7 +227,8 @@
 	// .screen-8__footer
 
 	&__footer {
-		display: flex;
+		/* display: flex; */
+		display: none;
 		position: absolute;
 		bottom: -438px;
 		left: 380px;
