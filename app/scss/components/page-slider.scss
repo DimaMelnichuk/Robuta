@@ -46,6 +46,10 @@
 		left: 64%;
 		top: 91%;
 
+		@media (max-width: 930px) {
+			top: 95%;
+		}
+
 		@media (max-width: 770px) {
 			left: 50%;
 			top: 104%;
