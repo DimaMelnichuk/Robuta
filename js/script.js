@@ -58,15 +58,19 @@ $(function(){
 			{
 			  breakpoint: 1600,
 			  settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1
+				slidesToShow: 3
 				}
 			},
 			{
-			  breakpoint: 480,
+				breakpoint: 700,
+				settings: {
+				  slidesToShow: 2
+				}
+			 },
+			{
+			  breakpoint: 510,
 			  settings: {
-				 slidesToShow: 1,
-				 slidesToScroll: 1
+				 slidesToShow: 1
 			  }
 			}
 		 ]	
