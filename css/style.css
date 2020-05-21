@@ -990,7 +990,10 @@
 .screen-8 {
   position: relative;
   height: 670px;
-  background-color: #dddddd;
+  background: url(../img/screen-8/01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .screen-8__content {
@@ -2889,6 +2892,8 @@ body.lock {
 .webp .screen-7{ background: url(../img/decor/lines-blue.webp) 84% 18% no-repeat, -o-linear-gradient(bottom, #fcfdff 0%, #eff4fe 100%); }
 
 .webp .screen-7{ background: url(../img/decor/lines-blue.webp) 84% 18% no-repeat, linear-gradient(to top, #fcfdff 0%, #eff4fe 100%); }
+
+.webp .screen-8{ background: url(../img/screen-8/01.webp); }
 
 @media (max-width: 1600px){
 
