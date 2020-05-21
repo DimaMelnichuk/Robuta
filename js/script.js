@@ -103,4 +103,3 @@ testWebP(function (support) {
 if (document.querySelector('.wrapper')) {
 	document.querySelector('.wrapper').classList.add('loaded');
 }
-;
