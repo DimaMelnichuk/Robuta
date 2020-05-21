@@ -2,21 +2,28 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 300px;
 	height: 100%;
 	overflow: auto;
-	background-color: rgba(#000, .8);
-	transform: translateY(-100%);
+	background-color: rgba(#000, .9);
+	transform: translateX(-100%);
 	transition: transform 0.6s ease 0s;
 
+	@media (max-width: 480px) {
+		width: 100%;
+	}
+
 	&.menu.active {
-		transform: translateY(0%);
+		transform: translateX(0%);
 	}
 	// .menu__list
 
 	&__list {
-		display: block;
-		padding: 90px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		align-items: center;
 	}
 
 	// .menu__item
@@ -33,9 +40,9 @@
 
 	&__link {
 		position: relative;
-		padding: 0px 0px;
 		color: $white;
 		text-transform: capitalize;
+		font-size: 20px;
 
 		&:hover {
 			color: $red;
@@ -53,7 +60,11 @@
 		z-index: 5;
 
 		&.active{
-			
+			position: fixed;
+
+			@media (max-width: 770px) {
+				position: relative;
+			}
 		}
 
 		&::before {
@@ -78,10 +89,22 @@
 		&::before {
 			top: 9px;
 		}
+
+		&.active::before {
+			background-color: $white;
+
+			@media (max-width: 770px) {
+				background-color: $blue-darken;
+			}
+		}
 		
 		&.active span {
 			width: 25px;
-			background-color: $blue-darken;
+			background-color: $white;
+
+			@media (max-width: 770px) {
+				background-color: $blue-darken;
+			}
 		}
 	}
 }
