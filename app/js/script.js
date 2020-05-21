@@ -1,1 +1,1 @@
-@@include('components/function.js');
+@@include('components/function.js')
