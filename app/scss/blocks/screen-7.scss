@@ -104,14 +104,12 @@
 		bottom: -1px;
 		left: -1px;
 		width: 450px;
-		height: 144px;
 		background-color: #ffffff;
 		padding: 19px 10px 0px 0px;
 
 		@media (max-width: 1400px) {
 			padding: 10px 10px 0px 0px;
 			width: 360px;
-    		height: 100px;
 		}
 
 		@media (max-width: 770px) {
@@ -126,12 +124,10 @@
 
 	&__text--sm {
 		width: 320px;
-		height: 90px;
 		padding: 13px 0px 0px 0px;
 
 		@media (max-width: 1400px) {
 			width: 270px;
-    		height: 80px;
 			padding: 7px 10px 0px 0px;
 		}
 
@@ -142,7 +138,6 @@
 
 		@media (max-width: 600px) {
 			width: 300px;
-			height: 100px;
 		}
 	}
 

@@ -6,6 +6,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 
+	@media (max-width: 1600px) {
+		height: 490px;
+	}
+
 	@media (max-width: 1400px) {
 		height: 400px;
 	}
@@ -244,8 +248,8 @@
 	&__footer {
 		display: flex;
 		position: absolute;
-		bottom: -438px;
-		left: 380px;
+		bottom: -220px;
+		left: 375px;
 
 		@media (max-width: 1400px) {
 			left: 205px;

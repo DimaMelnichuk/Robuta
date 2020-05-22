@@ -99,6 +99,8 @@
 	&__content-img {
 		width: 80px;
 		height: 80px;
+		object-position: center;
+		object-fit: cover;
 		background-color: #217297;
 		margin: 0px 0px 17px 0px;
 
@@ -108,12 +110,6 @@
 			margin: 0 0 5px 0;
 		}
 
-		@media (max-width: 480px) {
-			width: 100%;
-			height: 100px;
-			object-position: center;
-			object-fit: cover;
-		}
 	}
 
 	// .screen-1__content-level

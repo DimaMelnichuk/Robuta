@@ -109,6 +109,16 @@
 		}
 	}
 
+	&__text-icon {
+		background-image: url(../img/icons/wave.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 35px;
+		height: 35px;
+		margin: 0px 0px 15px 0px;
+	}
+
 	// .main-screen__text-subtitle
 
 	&__text-subtitle {
@@ -325,7 +335,6 @@
 
 	&__work-text {
 		flex: 1 1 auto;
-		width: 140px;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;

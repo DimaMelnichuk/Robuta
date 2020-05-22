@@ -188,6 +188,11 @@
 
 		p:nth-child(2){
 			color: #5a7797;
+			margin: 0px 0px 50px 0px;
+
+			@media (max-width: 770px) {
+				margin: 0;
+			}
 		}
 	}
 }

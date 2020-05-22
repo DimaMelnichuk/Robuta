@@ -60,11 +60,6 @@
 		z-index: 5;
 
 		&.active{
-			position: fixed;
-
-			@media (max-width: 770px) {
-				position: relative;
-			}
 		}
 
 		&::before {
