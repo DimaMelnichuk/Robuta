@@ -3,7 +3,6 @@
 	// .text__title
 
 	&__title {
-		color: $blue-darken;
 		font-family: $font-secondary;
 		@include adaptiv-font(40, 30);
 		font-weight: 700;

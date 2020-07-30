@@ -9,6 +9,10 @@ $(function(){
    /***************** Header__lang-btn ********************/
    $(".header__lang-btn").click(function(event){
 		$(".header__lang-btn").toggleClass("header__lang-btn--active");
+		$("body").toggleClass("night");
+		$(".header__logo-link--light").toggleClass("active");
+		$(".header__logo-link--night").toggleClass("active");
+		$(".screen-1, .screen-3, .screen-5, .screen-7, .screen-8").toggleClass("active");
 	});
 
 	/***************** Slider ********************/
@@ -31,10 +35,21 @@ $(function(){
 		 ]
 	 });
 
+	 $('.page-slider').mousewheel(function(e) {
+		e.preventDefault();
+	 
+		if (e.deltaY < 0) {
+		  $(this).slick('slickNext');
+		} else {
+		  $(this).slick('slickPrev');
+		}
+	 });
+
 	 $('.screen-2__slider').slick({
 		dots: true,
 		arrows: false,
 		fade: true,
+		adaptiveHeight: true
 	 });
 
 	 $('.screen-4__slider').slick({
@@ -98,8 +113,3 @@ testWebP(function (support) {
 		document.querySelector('body').classList.add('webp');
 	}
 });
-
-/***************** loaded ********************/
-if (document.querySelector('.wrapper')) {
-	document.querySelector('.wrapper').classList.add('loaded');
-}

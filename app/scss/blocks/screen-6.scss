@@ -58,7 +58,6 @@
 	// .screen-6-slider__title
 
 	&__title {
-		color: #07335d;
 		font-family: $font-secondary;
 		@include adaptiv-font(40, 28);
 		line-height: (45 / 40);
@@ -78,7 +77,6 @@
 	// .screen-6-slider__descr
 
 	&__descr {
-		color: #07335d;
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 28px;
@@ -98,7 +96,6 @@
 	// .screen-6-slider__name
 
 	&__name {
-		color: #07335d;
 		font-size: 16px;
 		line-height: 26px;
 		text-transform: uppercase;

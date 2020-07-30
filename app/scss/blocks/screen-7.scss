@@ -5,6 +5,11 @@
 	background: 
 	url(../img/decor/lines-blue.png) 84% 18% no-repeat,
 	linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
+
+	&.active {
+		background: 
+		url(../img/decor/lines-blue.png) 84% 18% no-repeat,
+		linear-gradient(to top, #131d27 0%, #131d27 100%);	}
 	
 	@media (max-width: 770px) {
 		padding: 0px 0 50px 0;
@@ -168,7 +173,6 @@
 	// .screen-7__text-title
 
 	&__text-title {
-		color: $blue-darken;
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 30px;

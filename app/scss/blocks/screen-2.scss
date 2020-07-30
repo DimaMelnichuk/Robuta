@@ -155,7 +155,6 @@
 
 	&__subtitle {
 		font-family: $font-secondary;
-		color: $blue-darken;
 		@include adaptiv-font(40, 28);
 		font-weight: 700;
 		margin: 0px 0px 37px 0px;
@@ -174,7 +173,6 @@
 		line-height: 26px;
 
 		p:nth-child(1){
-			color: $blue-darken;
 			margin: 0px 0px 40px 0px;
 
 			@media (max-width: 930px) {
@@ -187,7 +185,6 @@
 		}
 
 		p:nth-child(2){
-			color: #5a7797;
 			margin: 0px 0px 50px 0px;
 
 			@media (max-width: 770px) {

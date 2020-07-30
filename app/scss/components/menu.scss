@@ -59,9 +59,6 @@
 		cursor: pointer;
 		z-index: 5;
 
-		&.active{
-		}
-
 		&::before {
 			content: "";
 			background-color: $blue-darken;

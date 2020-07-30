@@ -71,8 +71,97 @@ html {scroll-behavior: smooth;}
 	  padding: 0px 15px;
   }
 }
-body.lock {
-	overflow: hidden;
+body {
+	color: #07335d;
+
+	&.lock {
+		overflow: hidden;
+	}
+
+	&.night {
+		background-color: #1A2634;
+		color: $white;
+
+		button {
+			color: $white;
+		}
+
+		.slick-dots button{ 
+			border: 1px solid $white;
+		}
+
+		.slick-dots li.slick-active button{
+			background-color: $white;
+		}
+
+		.menu__burger {
+
+			&::before {
+				background-color: $white;
+			}
+
+			span {
+				background-color: $white;
+			}
+		}
+
+		.screen-1__content {
+			background-color: #1A2634;
+		}
+
+		.screen-1__content-name { 
+			color: $white;
+		}
+
+		.screen-3__column {
+			background-color: #1A2634;
+		}
+
+		.screen-4__descr {
+			color: #94afc7;
+		}
+
+		.screen-4__btn {
+			color: #fff;
+		}
+
+		.screen-5-item__box {
+			background-color: #1A2634;
+		}
+
+		.screen-5-item__box-title {
+			color: #fff;
+		}
+
+		.screen-7__text {
+			background-color: #1A2634;
+		}
+
+		.screen-7__btn {
+			color: #fff;
+		}
+
+		.screen-8__content {
+			background-color: #1A2634;
+		}
+		.screen-8__text__address,
+		.screen-8__text__phone,
+		.screen-8__links,
+		.screen-8__select {
+			color: #fff;
+	  }
+	  .header {
+
+			@media (max-width: 770px) {
+				background: #1A2634;
+
+				&::before {
+					background-color: #131d27;
+				}
+			}
+	  }
+	}
+	
 }
 .wrapper {
 	height: 100vh;
@@ -85,10 +174,6 @@ body.lock {
 	@media (max-width: 770px) {
 		overflow: visible;
 		height: 100%;
-	}
-
-	&.loaded {
-
 	}
 }
 
@@ -120,3 +205,4 @@ body.lock {
 		}
 	}
 }
+

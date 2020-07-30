@@ -6,6 +6,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 
+	&.active {
+		background: #3b4a59 !important;
+	}
+
 	@media (max-width: 1600px) {
 		height: 490px;
 	}
@@ -83,6 +87,7 @@
 	// .screen-8__select
 
 	&__select {
+		background: transparent;
 		width: 100%;
 		padding: 0px 0px 15px 0px;
 		border-bottom: 1px solid #c1c1c1;
@@ -106,6 +111,7 @@
 	// .screen-8__name
 
 	&__name {
+		background: transparent;
 		width: 45%;
 		height: 55px;
 		border-bottom: 1px solid #c1c1c1;
@@ -118,6 +124,7 @@
 
 	&__message {
 		width: 100%;
+		background: transparent;
 		border-bottom: 1px solid #c1c1c1;
 		margin: 0px 0px 40px 0px;
 		resize: none;
@@ -130,6 +137,7 @@
 
 	&__email {
 		float: right;
+		background: transparent;
 		width: 45%;
 		height: 55px;
 		border-bottom: 1px solid #c1c1c1;
@@ -158,7 +166,6 @@
 	// .screen-8__title
 
 	&__title {
-		color: $blue-darken;
 		font-family: $font-secondary;
 		@include adaptiv-font(48, 25);
 		font-weight: 700;
