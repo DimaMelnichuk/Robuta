@@ -186,21 +186,3 @@ body {
 	flex: 1 1 auto;
 }
 
-.webp {
-	@media (max-width: 480px) {
-
-		.screen-3 {
-			background: linear-gradient(to top,#fcfdff 0,#eff4fe 100%)!important;
-		}
-		.screen-4 {
-			background: none !important;
-		}
-		.screen-6 {
-			background: none!important;
-		}
-		.screen-7 {
-			background: linear-gradient(to top,#fcfdff 0,#eff4fe 100%)!important;
-		}
-	}
-}
-
