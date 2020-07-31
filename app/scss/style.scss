@@ -82,8 +82,7 @@ body {
 		background-color: #1A2634;
 		color: $white;
 
-		button,
-		a {
+		button {
 			color: $white;
 		}
 
@@ -108,6 +107,11 @@ body {
 
 		.screen-1__content {
 			background-color: #1A2634;
+		}
+
+		.screen-1__work-link,
+		.main-screen__text-link {
+			color: $white;
 		}
 
 		.screen-1__content-name  { 
@@ -185,13 +189,6 @@ body {
 .webp {
 	@media (max-width: 480px) {
 
-		.screen-1 {
-			background: linear-gradient(to top,#fcfdff 0,#eff4fe 100%)!important;
-		}
-
-		.screen-2 {
-			background: none !important;
-		}
 		.screen-3 {
 			background: linear-gradient(to top,#fcfdff 0,#eff4fe 100%)!important;
 		}
