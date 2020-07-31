@@ -3,7 +3,7 @@
 	&__item {
 		height: 100vh;
 
-		@media (max-width: 770px) {
+		@media (max-width: 850px) {
 			height: 100%;
 		}
 	}
@@ -95,7 +95,7 @@
 		top: 115%;
 		transform: translateX(-50%);
 
-		@media (max-width: 770px) {
+		@media (max-width: 850px) {
 			top: 100%;
 		}
 	}
@@ -130,7 +130,7 @@
 		left: 3px;
 		top: 100%;
 
-		@media (max-width: 770px) {
+		@media (max-width: 850px) {
 			left: 50%;
 			transform: translate(-50%);
 		}

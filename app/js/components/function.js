@@ -29,7 +29,7 @@ $(function(){
 		verticalSwiping: true,
 		responsive: [
 			{
-			  breakpoint: 850,
+			  breakpoint: 851,
 			  settings: 'unslick'
 			}
 		 ]

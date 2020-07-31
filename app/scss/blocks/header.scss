@@ -48,6 +48,10 @@
 	&__logo {
 		position: relative;
 		margin: 0px 0px 0px 100px;
+
+		@media (max-width: 480px) {
+			margin: 0px;
+		}
 	}
 
 	&__logo-link--light {
@@ -75,7 +79,7 @@
 		transform: translate(-50%, -50%);
 
 		@media (max-width: 480px) {
-			width: 70%;
+			width: 100px;
 		}
 	}
 
@@ -102,7 +106,6 @@
 
 		@media (max-width: 480px) {
 			font-size: 14px;
-			padding: 0;
 		}
 
 		&:not(:last-child) {

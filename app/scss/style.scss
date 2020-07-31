@@ -82,7 +82,8 @@ body {
 		background-color: #1A2634;
 		color: $white;
 
-		button {
+		button,
+		a {
 			color: $white;
 		}
 
@@ -109,7 +110,7 @@ body {
 			background-color: #1A2634;
 		}
 
-		.screen-1__content-name { 
+		.screen-1__content-name  { 
 			color: $white;
 		}
 
