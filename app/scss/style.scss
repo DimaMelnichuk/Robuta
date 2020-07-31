@@ -152,7 +152,7 @@ body {
 	  }
 	  .header {
 
-			@media (max-width: 770px) {
+			@media (max-width: 850px) {
 				background: #1A2634;
 
 				&::before {
@@ -171,7 +171,7 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	@media (max-width: 770px) {
+	@media (max-width: 850px) {
 		overflow: visible;
 		height: 100%;
 	}

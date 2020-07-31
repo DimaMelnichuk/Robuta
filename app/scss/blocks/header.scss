@@ -5,7 +5,7 @@
 	left: 0;
 	z-index: 50;
 
-	@media (max-width: 770px) {
+	@media (max-width: 850px) {
 		position: fixed;
 		background: #eff4fe;
 
@@ -34,8 +34,12 @@
 			height: 80px;
 		}
 
-		@media (max-width: 480px) {
+		@media (max-width: 1400px) {
 			height: 60px;
+		}
+
+		@media (max-width: 480px) {
+			height: 50px;
 		}
 	}
 
