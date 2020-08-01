@@ -82,7 +82,8 @@ body {
 		background-color: #1A2634;
 		color: $white;
 
-		button {
+		button,
+		.main-screen__work-link--sm {
 			color: $white;
 		}
 
@@ -154,6 +155,9 @@ body {
 		}
 
 		.screen-8__content {
+			background-color: #1A2634;
+		}
+		.screen-8__select {
 			background-color: #1A2634;
 		}
 		.screen-8__text__address,

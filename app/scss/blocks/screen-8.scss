@@ -1,7 +1,7 @@
 .screen-8 {
 	position: relative;
 	height: 670px;
-	background: url(../img/screen-8/01.jpg);
+	background: url(../img/screen-8/01.webp);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -102,6 +102,10 @@
 			line-height: 23px;
 		}
 
+		@media (max-width: 600px) {
+			margin: 0px 0px 20px 0px;
+		}
+
 		@media (max-width: 480px) {
 			font-size: 15px;
 			line-height: 22px;
@@ -119,6 +123,15 @@
 
 		@media (max-width: 1400px) {
 			height: 45px;
+		}
+
+		@media (max-width: 600px) {
+			width: 100%;
+			margin: 0px 0px 25px 0px;
+		}
+
+		@media (max-width: 480px) {
+			margin: 0 0 25px 0;
 		}
 	}
 
@@ -144,6 +157,15 @@
 		
 		@media (max-width: 1400px) {
 			height: 45px;
+		}
+
+		@media (max-width: 600px) {
+			width: 100%;
+			margin: 0px 0px 40px 0px;
+		}
+
+		@media (max-width: 480px) {
+			margin: 0 0 25px 0;
 		}
 	}
 
