@@ -164,6 +164,10 @@
 		left: 3px;
 		top: 100%;
 
+		@media (max-width: 1250px) {
+			left: 50px;
+		}
+
 		@media (max-width: 850px) {
 			left: 50%;
 			transform: translate(-50%);
