@@ -86,7 +86,41 @@
 
 }
 
-.page-slider .screen-4 {
+.page-slider .screen-4{
+	.slick-dots {
+		.slick-current {
+			.screen-4__dotshead-box {
+				color: $orange;
+			}
+		}
+	}
+
+	.slider-arrows {
+		cursor: pointer;
+		position: absolute;
+		bottom: 80px;
+		z-index: 4;
+
+		@media (max-width: 1400px) {
+			bottom: 0;
+		}
+	}
+
+	.slider-arrows__left {
+		transform: rotate(180deg);
+	}
+
+	.slider-arrows__right {
+		left: 50px;
+
+		@media (max-width: 1250px) {
+			left: 100px;
+		}
+
+		@media (max-width: 1250px) {
+			left: 60px;
+		}
+	}
 }
 
 .page-slider .screen-5{
