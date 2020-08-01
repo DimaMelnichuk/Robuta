@@ -2769,6 +2769,14 @@ body.night .screen-8__select {
     margin: 5px 0 0 0;
   }
 
+  .screen-8 {
+    height: 320px;
+  }
+
+  .screen-8__content {
+    margin: 50px auto 0px;
+  }
+
   .menu__burger.active::before {
     background-color: #07335d;
   }
@@ -2868,14 +2876,6 @@ body.night .screen-8__select {
     width: 100%;
   }
 
-  .screen-8 {
-    height: 320px;
-  }
-
-  .screen-8__content {
-    margin: 50px auto 0px;
-  }
-
   .screen-8__footer {
     left: 15px;
     bottom: -220px;
@@ -2911,7 +2911,7 @@ body.night .screen-8__select {
   }
 
   .screen-8 {
-    height: 500px;
+    height: 300px;
   }
 
   .screen-8__content {
@@ -2921,6 +2921,7 @@ body.night .screen-8__select {
             flex-direction: column;
     margin: 30px auto 0;
     padding: 15px 15px 15px 15px;
+    height: 100%;
   }
 
   .screen-8__column {
