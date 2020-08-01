@@ -144,6 +144,13 @@ body {
 
 		.screen-7__btn {
 			color: #fff;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+		.screen-7__text {
+			color: #fff;
 		}
 
 		.screen-8__content {
