@@ -29,7 +29,7 @@ $(function(){
 		verticalSwiping: true,
 		responsive: [
 			{
-			  breakpoint: 850,
+			  breakpoint: 851,
 			  settings: 'unslick'
 			}
 		 ]
@@ -53,14 +53,16 @@ $(function(){
 	 });
 
 	 $('.screen-4__slider').slick({
-		arrows: false,
+		infinite: true,
 		fade: true,
+		prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/icons/arrow.png" alt="">',
+		nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/icons/arrow.png" alt="">',
 		asNavFor: '.screen-4__dotshead',
 	 });
 
 	 $('.screen-4__dotshead').slick({
 		slidesToShow: 4,
-		slidesToScroll: 4,
+		slidesToScroll: 1,
 		asNavFor: '.screen-4__slider',
 	 });
 
