@@ -104,6 +104,10 @@
 		@media (max-width: 1400px) {
 			bottom: 0;
 		}
+
+		@media (max-width: 850px) {
+			bottom: -15px;
+		}
 	}
 
 	.slider-arrows__left {
@@ -117,7 +121,7 @@
 			left: 100px;
 		}
 
-		@media (max-width: 1250px) {
+		@media (max-width: 850px) {
 			left: 60px;
 		}
 	}

@@ -63,7 +63,15 @@ html {scroll-behavior: smooth;}
 	font-size: 16px;
 	font-weight: 400;
 }
-
+input {
+	border-radius: 0;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+	appearance: none;
+}
 .container {
   padding: 0 60px;
 
@@ -162,6 +170,9 @@ body {
 		}
 		.screen-8__text__address,
 		.screen-8__text__phone,
+		.screen-8__name,
+		.screen-8__email,
+		.screen-8__message,
 		.screen-8__links,
 		.screen-8__select {
 			color: #fff;
