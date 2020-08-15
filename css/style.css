@@ -1126,18 +1126,32 @@
           flex: 0 1 40%;
 }
 
+.screen-8__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .screen-8__label {
   color: #8ea5bd;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   margin: 0px 0px -5px 0px;
+  width: 100%;
 }
 
 .screen-8__select {
   background: transparent;
   width: 100%;
-  padding: 0px 0px 15px 0px;
+  padding: 0px 0px 10px 0px;
   border-bottom: 1px solid #c1c1c1;
   color: #07335d;
   font-size: 20px;
@@ -1149,7 +1163,7 @@
 .screen-8__name {
   background: transparent;
   width: 45%;
-  height: 55px;
+  padding: 20px 0px 10px;
   border-bottom: 1px solid #c1c1c1;
   margin: 0px 0px 30px 0px;
 }
@@ -1159,14 +1173,15 @@
   background: transparent;
   border-bottom: 1px solid #c1c1c1;
   margin: 0px 0px 40px 0px;
+  padding: 16px 0px 0px;
   resize: none;
 }
 
 .screen-8__email {
-  float: right;
   background: transparent;
   width: 45%;
-  height: 55px;
+  padding: 20px 0px 10px;
+  margin: 0px 0px 20px 0px;
   border-bottom: 1px solid #c1c1c1;
 }
 
@@ -1700,6 +1715,19 @@ html {
   font-weight: 400;
 }
 
+input {
+  border-radius: 0;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .container {
   padding: 0 60px;
 }
@@ -1797,6 +1825,9 @@ body.night .screen-8__select {
 
 body.night .screen-8__text__address,
 body.night .screen-8__text__phone,
+body.night .screen-8__name,
+body.night .screen-8__email,
+body.night .screen-8__message,
 body.night .screen-8__links,
 body.night .screen-8__select {
   color: #fff;
@@ -2324,10 +2355,6 @@ body.night .screen-8__select {
     left: 100px;
   }
 
-  .page-slider .screen-4 .slider-arrows__right {
-    left: 60px;
-  }
-
   .page-slider .screen-6 .slick-dots {
     left: 50px;
   }
@@ -2805,6 +2832,14 @@ body.night .screen-8__select {
             transform: translate(-50%);
   }
 
+  .page-slider .screen-4 .slider-arrows {
+    bottom: -15px;
+  }
+
+  .page-slider .screen-4 .slider-arrows__right {
+    left: 60px;
+  }
+
   .page-slider .screen-5 .slick-dots {
     top: 103%;
   }
@@ -2989,18 +3024,13 @@ body.night .screen-8__select {
     line-height: 22px;
   }
 
-  .screen-8__select {
-    margin: 0px 0px 20px 0px;
-  }
-
   .screen-8__name {
     width: 100%;
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 20px 0px;
   }
 
   .screen-8__email {
     width: 100%;
-    margin: 0px 0px 40px 0px;
   }
 }
 
@@ -3013,6 +3043,22 @@ body.night .screen-8__select {
 @media (max-width: 500px) {
   .screen-5-item {
     padding: 0px;
+  }
+
+  .screen-8__select {
+    margin: 0 0 15px 0;
+  }
+
+  .screen-8__name {
+    margin: 0 0 15px 0;
+  }
+
+  .screen-8__message {
+    margin: 0 0 25px 0;
+  }
+
+  .screen-8__email {
+    margin: 0 0 15px 0;
   }
 }
 
@@ -3180,18 +3226,6 @@ body.night .screen-8__select {
     line-height: 22px;
   }
 
-  .screen-8__name {
-    margin: 0 0 25px 0;
-  }
-
-  .screen-8__message {
-    margin: 0 0 25px 0;
-  }
-
-  .screen-8__email {
-    margin: 0 0 25px 0;
-  }
-
   .screen-8__title {
     margin: 0 0 15px 0;
   }
@@ -3243,6 +3277,20 @@ body.night .screen-8__select {
 
   .text__descr {
     line-height: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .screen-8__select {
+    margin: 0 0 5px 0;
+  }
+
+  .screen-8__name {
+    margin: 0 0 5px 0;
+  }
+
+  .screen-8__email {
+    margin: 0 0 5px 0;
   }
 }
 
