@@ -1157,7 +1157,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 26px;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .screen-8__name {
@@ -1180,6 +1180,7 @@
 .screen-8__email {
   background: transparent;
   width: 45%;
+  border-radius: 0;
   padding: 20px 0px 10px;
   margin: 0px 0px 20px 0px;
   border-bottom: 1px solid #c1c1c1;
@@ -2210,14 +2211,6 @@ body.night .screen-8__select {
             flex: 0 1 45%;
   }
 
-  .screen-8__name {
-    height: 45px;
-  }
-
-  .screen-8__email {
-    height: 45px;
-  }
-
   .screen-8__title {
     margin: 0 0 20px 0;
   }
@@ -3022,6 +3015,10 @@ body.night .screen-8__select {
   .screen-7__text-title--sm {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .screen-8__select {
+    margin: 0px 0px 20px 0px;
   }
 
   .screen-8__name {
