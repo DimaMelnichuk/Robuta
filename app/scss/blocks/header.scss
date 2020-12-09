@@ -1,12 +1,13 @@
 .header {
-	position: relative;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 50;
+	transform: translate(0px, -100%);
+	background: #fff;
 
 	@media (max-width: 850px) {
-		position: fixed;
 		background: #eff4fe;
 
 		&::before {
@@ -56,20 +57,6 @@
 
 	&__logo-link--light {
 		z-index: 5;
-
-		&.active {
-			z-index: 5;
-		}
-
-	}
-
-	&__logo-link--night {
-		z-index: 4;
-
-		&.active {
-			z-index: 6;
-		}
-
 	}
 
 	&__logo-link {

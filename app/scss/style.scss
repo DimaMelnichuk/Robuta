@@ -85,126 +85,187 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
+}
+body.night {
+	background-color: #1A2634;
+	color: $white;
 
-	&.night {
-		background-color: #1A2634;
-		color: $white;
-
-		button,
-		.main-screen__work-link--sm {
-			color: $white;
-		}
-
-		.slick-dots button{ 
-			border: 1px solid $white;
-		}
-
-		.slick-dots li.slick-active button{
+	.header {
+		background: #1A2634;
+	}
+	.header__logo-link--night {
+		z-index: 6;
+	}
+	.header__lang-btn {
+		color: #fff;
+	}
+	.menu__burger {
+		&::before {
 			background-color: $white;
 		}
+		span {
+			background-color: $white;
+		}
+	}
+	.page__bullet {
+		border-color: $white;
+		&--active {
+			background-color: $white;
+		}
+	}
+	.screen-1,
+	.screen-3,
+	.screen-5,
+	.screen-7,
+	.screen-8 {
+		background: #131d27;
+	}
+	button,
+	.main-screen__work-link--sm {
+		color: $white;
+	}
 
-		.menu__burger {
+	.screen-1__content {
+		background-color: #1A2634;
+	}
+
+	.screen-1__work-link,
+	.main-screen__text-link {
+		color: $white;
+	}
+
+	.screen-1__content-name  { 
+		color: $white;
+	}
+
+	.screen-3__column {
+		background-color: #1A2634;
+	}
+
+	.screen-4__descr {
+		color: #94afc7;
+	}
+
+	.screen-4__btn {
+		color: #fff;
+	}
+
+	.screen-5-item__box {
+		background-color: #1A2634;
+	}
+
+	.screen-5-item__box-title {
+		color: #fff;
+	}
+
+	.screen-7__text {
+		background-color: #1A2634;
+	}
+
+	.screen-7__btn {
+		color: #fff;
+
+		&:hover {
+			color: $orange;
+		}
+	}
+	.screen-7__text {
+		color: #fff;
+	}
+
+	.screen-8__content {
+		background-color: #1A2634;
+	}
+	.screen-8__select {
+		background-color: #1A2634;
+	}
+	.screen-8__text__address,
+	.screen-8__text__phone,
+	.screen-8__name,
+	.screen-8__email,
+	.screen-8__message,
+	.screen-8__links,
+	.screen-8__select {
+		color: #fff;
+  }
+  .header {
+
+		@media (max-width: 850px) {
+			background: #1A2634;
 
 			&::before {
-				background-color: $white;
-			}
-
-			span {
-				background-color: $white;
+				background-color: #131d27;
 			}
 		}
-
-		.screen-1__content {
-			background-color: #1A2634;
-		}
-
-		.screen-1__work-link,
-		.main-screen__text-link {
-			color: $white;
-		}
-
-		.screen-1__content-name  { 
-			color: $white;
-		}
-
-		.screen-3__column {
-			background-color: #1A2634;
-		}
-
-		.screen-4__descr {
-			color: #94afc7;
-		}
-
-		.screen-4__btn {
-			color: #fff;
-		}
-
-		.screen-5-item__box {
-			background-color: #1A2634;
-		}
-
-		.screen-5-item__box-title {
-			color: #fff;
-		}
-
-		.screen-7__text {
-			background-color: #1A2634;
-		}
-
-		.screen-7__btn {
-			color: #fff;
-
-			&:hover {
-				color: $orange;
-			}
-		}
-		.screen-7__text {
-			color: #fff;
-		}
-
-		.screen-8__content {
-			background-color: #1A2634;
-		}
-		.screen-8__select {
-			background-color: #1A2634;
-		}
-		.screen-8__text__address,
-		.screen-8__text__phone,
-		.screen-8__name,
-		.screen-8__email,
-		.screen-8__message,
-		.screen-8__links,
-		.screen-8__select {
-			color: #fff;
-	  }
-	  .header {
-
-			@media (max-width: 850px) {
-				background: #1A2634;
-
-				&::before {
-					background-color: #131d27;
-				}
-			}
-	  }
-	}
-	
+  }
 }
 .wrapper {
-	height: 100vh;
-	width: 100%;
 	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
+	opacity: 0;
+	transition: all .8s ease 0s;
 
-	@media (max-width: 850px) {
-		overflow: visible;
-		height: 100%;
+	&.loaded {
+		opacity: 1;
+
+		.header {
+			transition: transform .8s ease .6s;
+			transform: translate(0px, 0px)
+		}
+
+		.page__pagination {
+			opacity: 1;
+			visibility: visible;
+			transition: transform .5s ease .6s;
+			transform: translate(0px, -50%)
+		}
 	}
 }
 
 .page {
-	flex: 1 1 auto;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
 }
+.page__wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.page__screen {
+	flex: 1 0 100%;
+	position: relative;
+}
+.page__pagination {
+	position: absolute;
+	left: 60px;
+	top: 50%;
+	transform: translate(-100px, -50%);
+	display: flex;
+	flex-direction: column;
+	opacity: 0;
+	visibility: hidden;
 
+	@media (max-width: 1400px) {
+		left: 15px;
+	}
+}
+.page__bullet {
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	border: 1px solid #5a7797;
+	background-color: transparent;
+	margin: 0px 0px 19px 0px;
+
+	&:last-child {
+		margin: 0;
+	}
+
+	&--active {
+		background-color: #5a7797;
+	}
+}

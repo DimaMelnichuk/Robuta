@@ -1,20 +1,20 @@
 .screen-8 {
 	position: relative;
 	height: 670px;
+	padding: 130px 0px 0px 0px;
 	background: url(../img/screen-8/01.webp);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	&.active {
-		background: #3b4a59 !important;
-	}
-
 	@media (max-width: 1600px) {
 		height: 490px;
 	}
-
+	@media (max-width: 1500px) {
+		padding: 80px 0px 0px 0px;
+	}
 	@media (max-width: 1400px) {
+		padding: 60px 0px 0px 0px;
 		height: 400px;
 	}
 
@@ -24,6 +24,10 @@
 
 	@media (max-width: 700px) {
 		height: 300px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 50px 0px 0px 0px;
 	}
 	// .screen-8__content
 

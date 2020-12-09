@@ -1,10 +1,15 @@
 .screen-4 {
-	height: 100%;
+	padding: 130px 0px 0px 0px;
 	background: 
 	url(../img/decor/lines-yellow-sm.png) -3% 70% no-repeat,
 	url(../img/decor/lines-blue-b.png) 87% 6% no-repeat;
+
+	@media (max-width: 1500px) {
+		padding: 80px 0px 0px 0px;
+	}
 	
 	@media (max-width: 1400px) {
+		padding: 60px 0px 0px 0px;
 		background: 
 		url(../img/decor/lines-yellow-sm.png) -3% 74% no-repeat,
 		url(../img/decor/lines-blue-b.png) 96% 6% no-repeat;	
@@ -16,6 +21,10 @@
 
 	@media (max-width: 850px) {
 		padding: 0px 0 50px 0;
+	}
+
+	@media (max-width: 480px) {
+		padding: 50px 0px 0px 0px;
 	}
 
 	&__slider {

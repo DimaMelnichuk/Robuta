@@ -1,49 +1,17 @@
 $(function(){
 
-   /***************** Menu-btn ********************/
-   $(".menu__burger").click(function(event){
-		$(".menu__burger,.menu,.menu__wrapper").toggleClass("active");
-		$("body").toggleClass("lock");
-	});
 
    /***************** Header__lang-btn ********************/
-   $(".header__lang-btn").click(function(event){
-		$(".header__lang-btn").toggleClass("header__lang-btn--active");
-		$("body").toggleClass("night");
-		$(".header__logo-link--light").toggleClass("active");
-		$(".header__logo-link--night").toggleClass("active");
-		$(".screen-1, .screen-3, .screen-5, .screen-7, .screen-8").toggleClass("active");
-	});
+   // $(".header__lang-btn").click(function(event){
+	// 	$(".header__lang-btn").toggleClass("header__lang-btn--active");
+	// 	$("body").toggleClass("night");
+	// 	$(".header__logo-link--light").toggleClass("active");
+	// 	$(".header__logo-link--night").toggleClass("active");
+	// 	$(".screen-1, .screen-3, .screen-5, .screen-7, .screen-8").toggleClass("active");
+	// });
 
 	/***************** Slider ********************/
-	$('.page-slider').on(`init reInit`, function(event, slick) {
-		$('.counter').text(1 + ' / ' + slick.slideCount);
-	 })
-	 $('.page-slider').on(`afterChange`, function(event, slick, currentSlide, nextSlide) {
-		$('.counter').text(currentSlide + 1 + ' / ' + slick.slideCount);
-	 })
-	 $('.page-slider').slick({
-		dots: true,
-		arrows: false,
-		vertical: true,
-		verticalSwiping: true,
-		responsive: [
-			{
-			  breakpoint: 851,
-			  settings: 'unslick'
-			}
-		 ]
-	 });
 
-	 $('.page-slider').mousewheel(function(e) {
-		e.preventDefault();
-	 
-		if (e.deltaY < 0) {
-		  $(this).slick('slickNext');
-		} else {
-		  $(this).slick('slickPrev');
-		}
-	 });
 
 	 $('.screen-2__slider').slick({
 		dots: true,
@@ -101,20 +69,151 @@ $(function(){
 	
  
 });
+$(".header__lang-btn--day").click(function() {
+	like_btn(this);
+ });
+
+ $(".header__lang-btn--night").click(function() {
+	dislike_btn(this);
+ });
+// $(".header__lang-btn").click(function(event){
+// 	$(".header__lang-btn").toggleClass("header__lang-btn--active");
+// 	$("body").toggleClass("night");
+// 	$(".header__logo-link--light").toggleClass("active");
+// 	$(".header__logo-link--night").toggleClass("active");
+// 	$(".screen-1, .screen-3, .screen-5, .screen-7, .screen-8").toggleClass("active");
+// });
+
+// let body = document.querySelector("body");
+
+// document.querySelectorAll('.header__lang-btn').forEach((btns) =>
+// 	btns.addEventListener('click', function(e) {
+// 		e.preventDefault();
+// 		let btn = btns;
+
+// 		if (btn.classList.contains('header__lang-btn--active')) {
+// 			btn.classList.remove('content__item--active');
+// 			body.classList.remove('night');
+// 		} else {
+// 			document
+// 				.querySelectorAll('.header__lang-btn')
+// 				.forEach((child) => child.classList.remove('header__lang-btn--active'))
+// 				btn.classList.add('header__lang-btn--active');
+// 				body.classList.add('night');
+// 		}
+
+// 	})
+// );
+
+
+let body = document.querySelector("body");
+function like_btn(btn) {
+	btn.classList.add("header__lang-btn--active");
+	body.classList.remove("night");
+	let nextSibling = btn.nextElementSibling;
+	 nextSibling.classList.remove("header__lang-btn--active");
+ }
+ 
+function dislike_btn(btn) {
+btn.classList.add("header__lang-btn--active");
+body.classList.add("night");
+let previousSibling = btn.previousElementSibling;
+	previousSibling.classList.remove("header__lang-btn--active");
+}
+
+let wrapper = document.querySelector(".wrapper");
+
+let pageSlider = new Swiper(".page", {
+	wrapperClass: "page__wrapper",
+	slideClass: "page__screen",
+	direction: "vertical",
+	slidesPerView: "auto",
+	parallax: true,
+	watchOverflow: true,
+	speed: 900,
+
+	observer: true,
+	observeParents: true,
+	observeSlideChildren: true,
+
+	mousewheel: {
+		sensitivity: 1,
+	},
+
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true,
+		pageUpDown: true,
+	},
+
+	pagination: {
+		el: '.page__pagination',
+		type: "bullets",
+		clickable: true,
+		bulletClass: "page__bullet",
+		bulletActiveClass: "page__bullet--active",
+	 },
+
+	 runCallbacksOnInit: true,
+	 init: false,
+
+	 on: {
+		 init: function (sw) {
+			menuSlider();
+			wrapper.classList.add("loaded");
+			var offer = document.querySelector('.counter');
+			offer.innerHTML = (sw.activeIndex +  1) + ' / ' + sw.slides.length;
+		 },
+		 slideChange: function(sw) {
+			menuSliderRemove();
+			menuLinks[pageSlider.realIndex].classList.add("menu__link--active");
+			var offer = document.querySelector('.counter');
+			offer.innerHTML = (sw.activeIndex +  1) + ' / ' + sw.slides.length;
+		 },
+	 },
+});
+
+let menuLinks = document.querySelectorAll(".menu__link");
+
+function menuSlider() {
+	menuLinks[pageSlider.realIndex].classList.add("menu__link--active");
+	if (menuLinks.lenght > 0) {
+		for (let index = 0; index < menuLinks.length; index++) {
+			const menuLink = menuLinks[index];
+			menuLink.addEventListener("click", function(e) {
+				menuSliderRemove();
+				pageSlider.slideTo(index, 900);
+				menuLink.classList.add("menu__link--active");
+				e.preventDefault();
+			});
+		}
+	}
+}
+
+function menuSliderRemove() {
+	let menuLinkActive = document.querySelector(".menu__link.menu__link--active");
+	if (menuLinkActive) {
+		menuLinkActive.classList.remove("menu__link--active");
+	}
+}
+
+pageSlider.init();
 
 
 let menuBurger = document.querySelector('.menu__burger');
+let menu = document.querySelector('.menu');
+document.documentElement.addEventListener("click", function (e) {
+	menuBurger.classList.toggle('active');
+	menu.classList.toggle('active');
+	body.classList.toggle('lock');
+});
 document.documentElement.addEventListener("click", function (e) {
 	if (!e.target.closest('.header__menu-inner')) {
 		menuBurger.classList.remove('active');
-	}
-});
-let menu = document.querySelector('.menu');
-document.documentElement.addEventListener("click", function (e) {
-	if (!e.target.closest('.header__menu-inner')) {
 		menu.classList.remove('active');
 	}
 });
+
 
 /***************** WebP ********************/
 function testWebP(callback) {

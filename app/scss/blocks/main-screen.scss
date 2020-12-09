@@ -1,15 +1,23 @@
 .main-screen {
+	padding: 130px 0px 0px 0px;
 	position: relative;
 	background: url(../img/decor/wave-line-red.png) 85% 93% no-repeat, 
 					url(../img/decor/wave-line-yellow.png) 40% 93% no-repeat, 
 					url(../img/decor/line-green.png) 58% 22% no-repeat,
 					url(../img/decor/lines-blue.png) 100% 83% no-repeat;
-	background-size: auto, auto, cover;
 
 	@media (max-width: 1600px) {
-		background: url(../img/decor/wave-line-yellow.png) 44% 100% no-repeat,
+		background: url(../img/decor/wave-line-red.png) 82% 98% no-repeat, 
+						url(../img/decor/wave-line-yellow.png) 44% 100% no-repeat,
 						url(../img/decor/line-green.png) 53% 24% no-repeat,
 						url(../img/decor/lines-blue.png) 100% 83% no-repeat;
+	}
+
+	@media (max-width: 1500px) {
+		padding: 80px 0px 0px 0px;
+	}
+	@media (max-width: 1400px) {
+		padding: 60px 0px 0px 0px;
 	}
 
 	@media (max-width: 1250px) {
@@ -22,7 +30,6 @@
 
 	@media (max-width: 480px) {
 		padding: 50px 0px 20px 0px;
-		
 	}
 	// .main-screen__content
 

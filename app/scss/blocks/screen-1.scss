@@ -1,51 +1,17 @@
 .screen-1 {
+	padding: 130px 0px 0px 0px;
 	height: 100%;
-	background: 
-	url(../img/decor/lines-yellow-sm.png) 17% 77% no-repeat,
-	url(../img/decor/lines-blue.png) 104% 6% no-repeat,
-	linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
+	background: linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
 
-	&.active {
-		background: 
-		url(../img/decor/lines-yellow-sm.png) 17% 77% no-repeat,
-		url(../img/decor/lines-blue.png) 104% 6% no-repeat,
-		linear-gradient(to top, #131d27 0%, #131d27 100%);
+	@media (max-width: 1500px) {
+		padding: 80px 0px 0px 0px;
 	}
-	
-	@media (max-width: 1600px) {
-		background: 
-		url(../img/decor/lines-yellow-sm.png) 9% 73% no-repeat,
-		url(../img/decor/lines-blue.png) 106% 6% no-repeat,
-		linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
-
-		&.active {
-			background: 
-			url(../img/decor/lines-yellow-sm.png) 9% 73% no-repeat,
-			url(../img/decor/lines-blue.png) 106% 6% no-repeat,
-			linear-gradient(to top, #131d27 0%, #131d27 100%);
-		}
-	}
-
 	@media (max-width: 1400px) {
-		background: 
-		url(../img/decor/lines-yellow-sm.png) 8% 76% no-repeat,
-		url(../img/decor/lines-blue.png) 112% 4% no-repeat,
-		linear-gradient(to top,#fcfdff 0,#eff4fe 100%);
-
-		&.active {
-			background: 
-			url(../img/decor/lines-yellow-sm.png) 8% 76% no-repeat,
-			url(../img/decor/lines-blue.png) 112% 4% no-repeat,
-			linear-gradient(to top,#131d27 0,#131d27 100%);
-		}
+		padding: 60px 0px 0px 0px;
 	}
 
 	@media (max-width: 1250px) {
 		background: #eff4fe !important;
-
-		&.active {
-			background: #131d27 !important;
-		}
 	}
 
 	@media (max-width: 850px) {
@@ -53,7 +19,7 @@
 	}
 
 	@media (max-width: 480px) {
-		padding: 0px 0px 20px 0px;
+		padding: 50px 0px 20px 0px;
 	}
 	// .screen-1__content
 

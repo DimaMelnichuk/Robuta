@@ -1,21 +1,21 @@
 .screen-5 {
+	padding: 130px 0px 0px 0px;
 	height: 100%;
 	background-image: linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
 
-	&.active {
-		background-image: linear-gradient(to top, #131d27 0%, #131d27 100%);
+	@media (max-width: 1500px) {
+		padding: 80px 0px 0px 0px;
 	}
-
-	@media (max-width: 1250px) {
-		background: none !important;
-
-		&.active {
-			background: #131d27 !important;
-		}
+	@media (max-width: 1400px) {
+		padding: 60px 0px 0px 0px;
 	}
 
 	@media (max-width: 850px) {
 		padding: 0px 0 50px 0;
+	}
+	
+	@media (max-width: 480px) {
+		padding: 50px 0px 0px 0px;
 	}
 	// .screen-5__slider
 
