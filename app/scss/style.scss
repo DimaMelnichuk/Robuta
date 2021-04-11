@@ -121,7 +121,7 @@ body.night {
 		background: #131d27;
 	}
 	button,
-	.main-screen__work-link--sm {
+	.main-screen__work-link--mobile {
 		color: $white;
 	}
 
@@ -132,6 +132,11 @@ body.night {
 	.screen-1__work-link,
 	.main-screen__text-link {
 		color: $white;
+		border-color: #fff;
+
+		&:hover {
+			color: $orange;
+		}
 	}
 
 	.screen-1__content-name  { 
@@ -240,7 +245,7 @@ body.night {
 	position: relative;
 }
 .page__pagination {
-	position: absolute;
+	position: fixed;
 	left: 60px;
 	top: 50%;
 	transform: translate(-100px, -50%);
@@ -268,4 +273,11 @@ body.night {
 	&--active {
 		background-color: #5a7797;
 	}
+}
+
+.wrapper.free .page__pagination {
+	opacity: 0;
+	transform: translate(50px, -50%);
+	transition: all .3s;
+	display: none;
 }
