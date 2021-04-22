@@ -1,4 +1,6 @@
 .menu-title {
+	position: relative;
+	z-index: 2;
 	display: inline-block;
 	background: $red;
 	color: #ffffff;

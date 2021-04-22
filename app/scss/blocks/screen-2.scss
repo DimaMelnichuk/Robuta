@@ -15,6 +15,14 @@
 		background: none !important;
 	}
 
+	@media (max-width: 850px) {
+		padding: 0px 0 50px 0;
+	}
+
+	@media (max-width: 480px) {
+		padding: 0px 0px 30px 0px;
+	}
+
 	// .screen-2__slider
 
 	&__slider {
@@ -156,6 +164,10 @@
 		@media (max-width: 850px) {
 			margin: 30px 0px 0px 0px;
 		}
+
+		@media (max-width: 480px) {
+			margin: 20px 0px 0px 0px;
+		}
 	}
 
 	// .item-slider__title
@@ -179,12 +191,16 @@
 
 	&__subtitle {
 		font-family: $font-secondary;
-		@include adaptiv-font(40, 28);
+		@include adaptiv-font(40, 25);
 		font-weight: 700;
 		margin: 0px 0px 37px 0px;
 
 		@media (max-width: 930px) {
 			margin: 0 0 20px 0;
+		}
+
+		@media (max-width: 480px) {
+			margin: 0px 0px 10px 0px;
 		}
 
 	}
@@ -195,25 +211,15 @@
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 26px;
+		margin: 0px 0px 40px 0px;
 
-		p:nth-child(1){
+		p:first-child {
 			margin: 0px 0px 40px 0px;
 
-			@media (max-width: 930px) {
-				margin: 0 0 20px 0;
-			}
-
-			@media (max-width: 770px) {
-				margin: 0 0 15px 0;
+			@media (max-width: 700px) {
+				margin: 0px 0px 25px 0px;
 			}
 		}
 
-		p:nth-child(2){
-			margin: 0px 0px 50px 0px;
-
-			@media (max-width: 770px) {
-				margin: 0;
-			}
-		}
 	}
 }

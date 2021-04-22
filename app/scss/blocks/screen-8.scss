@@ -6,8 +6,21 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	&.active {
-		background: #3b4a59 !important;
+	@media (max-width: 850px) {
+		background-position: top;
+		background-size: contain;
+	}
+
+	&.active {			
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: rgba(29, 27, 26, 0.70);
+		}
 	}
 
 	@media (max-width: 1600px) {
@@ -19,16 +32,15 @@
 	}
 
 	@media (max-width: 850px) {
-		height: 320px;
+		height: 100%;
 	}
 
-	@media (max-width: 700px) {
-		height: 300px;
-	}
 	// .screen-8__content
 
 	&__content {
-		margin: 310px auto 0;
+		position: relative;
+		z-index: 2;
+		margin: 200px auto 0;
 		max-width: 1320px;
 		height: 100%;
 		padding: 80px 70px;
@@ -52,12 +64,11 @@
 		}
 
 		@media (max-width: 850px) {
-			margin: 50px auto 0px;
+			margin: 150px auto 0px;
 		}
 
 		@media (max-width: 700px) {
 			flex-direction: column;
-			margin: 30px auto 0;
 			padding: 15px 15px 15px 15px;
 			height: 100%;
 		}
@@ -73,7 +84,7 @@
 		}
 
 		@media (max-width: 700px) {
-			margin: 0px 0px 30px 0px;
+			margin: 0px 0px 40px 0px;
 		}
 	}
 
@@ -170,7 +181,7 @@
 		width: 45%;
 		border-radius: 0;
 		padding: 20px 0px 10px;
-		margin: 0px 0px 20px 0px;
+		margin: 0px 0px 30px 0px;
 		border-bottom: 1px solid #c1c1c1;
 
 		@media (max-width: 600px) {
@@ -206,7 +217,7 @@
 
 	&__title {
 		font-family: $font-secondary;
-		@include adaptiv-font(48, 25);
+		@include adaptiv-font(48, 23);
 		font-weight: 700;
 		margin: 0px 0px 38px 0px;
 
@@ -234,13 +245,12 @@
 		}
 
 		@media (max-width: 480px) {
-			font-size: 15px;
 			line-height: 20px;
 			margin: 0 0 10px 0;
 		}
 	}
 
-	&__text__address {
+	&__text-address {
 		width: 290px;
 		color: $blue-darken;
 		font-size: 16px;
@@ -253,39 +263,42 @@
 		}
 
 		@media (max-width: 480px) {
-			font-size: 14px;
 			line-height: 20px;
 		}
 	}
 
-	&__text__email {
-		display: block;
-		color: $blue;
-		font-family: $font-third;
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 26px;
-		text-decoration: underline;
+	&__text-email {
 		margin: 0px 0px 10px 0px;
-		transition: color .3s;
 
-		&:hover {
-			color: $orange;
+		a {
+			color: $blue;
+			font-family: $font-third;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 22px;
+			border-bottom: 1px solid $blue;
+			transition: color .3s,border .3s;
+	
+			&:hover {
+				color: $orange;
+				border-bottom: 1px solid transparent;
+			}
 		}
 	}
-	&__text__phone {
-		color: $blue-darken;
-		display: block;
-		font-size: 24px;
-		font-weight: 700;
-		transition: color .3s;
-
-		@media (max-width: 1400px) {
-			font-size: 20px;
-		}
-
-		&:hover {
-			color: $orange;
+	&__text-phone {
+		a {
+			color: $blue-darken;
+			font-size: 24px;
+			font-weight: 700;
+			transition: color .3s;
+	
+			@media (max-width: 1400px) {
+				font-size: 20px;
+			}
+	
+			&:hover {
+				color: $orange;
+			}
 		}
 	}
 

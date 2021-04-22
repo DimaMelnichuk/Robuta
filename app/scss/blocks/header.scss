@@ -1,12 +1,12 @@
 .header {
-	position: relative;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 50;
+	transform: translate(0%, -100%);
 
 	@media (max-width: 850px) {
-		position: fixed;
 		background: #eff4fe;
 
 		&::before {

@@ -1,5 +1,7 @@
 .main-screen {
 	position: relative;
+	opacity: 0;
+	transition: opacity .4s ease .4s;
 	background: url(../img/decor/wave-line-red.png) 85% 93% no-repeat, 
 					url(../img/decor/wave-line-yellow.png) 40% 93% no-repeat, 
 					url(../img/decor/line-green.png) 58% 22% no-repeat,
@@ -9,7 +11,7 @@
 	@media (max-width: 1600px) {
 		background: url(../img/decor/wave-line-yellow.png) 44% 100% no-repeat,
 						url(../img/decor/line-green.png) 53% 24% no-repeat,
-						url(../img/decor/lines-blue.png) 100% 83% no-repeat;
+						url(../img/decor/lines-blue.png) 100% 83% no-repeat;			
 	}
 
 	@media (max-width: 1250px) {
@@ -17,11 +19,11 @@
 	}
 
 	@media (max-width: 850px) {
-		padding: 60px 0 50px 0;
+		padding: 0px 0 50px 0;
 	}
 
 	@media (max-width: 480px) {
-		padding: 50px 0px 20px 0px;
+		padding: 0px 0px 30px 0px;
 		
 	}
 	// .main-screen__content
@@ -48,11 +50,11 @@
 	&__text {
 		align-self: flex-end;
 		max-width: 570px;
-		padding: 110px 0px 0px 50px;
-		margin-right: 110px;
+		padding: 90px 0px 0px 50px;
+		margin: 0px 110px 0px 0px;
 
 		@media (max-width: 1500px) {
-			margin-right: 50px;
+			margin: 0px 50px 0px 0px;
 		}
 
 		@media (max-width: 1400px) {
@@ -60,7 +62,7 @@
 		}
 
 		@media (max-width: 1200px) {
-			padding: 20px 0px 0px 30px;
+			padding: 20px 0px 0px 40px;
 			margin: 0px 30px 0px 0px;
 		}
 
@@ -80,7 +82,7 @@
 
 	&__text-title {
 		font-family: $font-secondary;
-		@include adaptiv-font(46, 27);
+		@include adaptiv-font(46, 25);
 		font-weight: 700;
 		line-height: 56px;
 		margin: 0px 0px 16px 0px;
@@ -101,10 +103,19 @@
 			line-height: 30px;
 		}
 
-		span {
-			display: block;
-			color: $orange;
+	}
+
+	&__text-welcome {
+		display: block;
+		color: $orange;
+
+		@media (max-width: 850px) {
+			display: inline-block;
 		}
+	}
+
+	&__text-name {
+		display: block;
 	}
 
 	&__text-icon {
@@ -120,6 +131,11 @@
 			width: 25px;
 			height: 25px;
 			margin: 0px 0px 10px 0px;
+		}
+
+		@media (max-width: 850px) {
+			display: inline-block;
+			margin: 0px 5px 0px 0px;
 		}
 	}
 
@@ -191,13 +207,15 @@
 	}
 
 	&__text-link {
-		text-decoration: underline;
 		font-weight: 700;
 		color: #5a7797;
-		transition: color .3s;
+		white-space: nowrap;
+		border-bottom: 1px solid #5a7797;
+		transition: color .3s, border .3s;
 
 		&:hover {
 			color: $orange;
+			border-bottom: 1px solid transparent;
 		}
 	}
 
@@ -208,7 +226,7 @@
 		margin: 0px -13px;
 
 		@media (max-width: 850px) {
-			margin: 0px -7.5px 20px -7.5px;
+			margin: 0px -7.5px 25px -7.5px;
 		}
 
 		@media (max-width: 480px) {
@@ -271,7 +289,7 @@
 	// .main-screen__box--bg
 
  	&__box-img--bg {
-		padding: 0px 0px 130% 0px;
+		padding: 0 0 120% 0;
 
 		@media (max-width: 1400px) {
 			padding: 0px 0px 120% 0px;
@@ -354,22 +372,22 @@
 		line-height: 26px;
 		text-transform: uppercase;
 		color: $blue-darken;
-		transition: color .3s, border-bottom .3s;
+		transition: color .3s;
 
 		@media (max-width: 900px) {
 			font-size: 15px;
 		}
 
 		&:hover {
-			text-decoration: underline;
+			color: #fff;
 		}
 
 		span {
 			font-size: 19px;
-			 margin-left: 25px;
+			margin-left: 25px;
 			 
 			 @media (max-width: 900px) {
-				 margin-left: 5px;
+				margin-left: 5px;
 			 }
 		}
 	}

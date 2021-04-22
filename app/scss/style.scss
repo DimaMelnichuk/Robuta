@@ -29,6 +29,7 @@
 @import "components/design";
 @import "components/page-slider";
 @import "components/text";
+@import "components/swiper";
 
 /* ==========================================================================
   General Styles
@@ -118,10 +119,19 @@ body {
 			background-color: #1A2634;
 		}
 
-		.screen-1__work-link,
-		.main-screen__text-link {
+		.screen-1__work-link {
 			color: $white;
 		}
+
+		.main-screen__text-link {
+			color: $white;
+
+			&:hover {
+				color: $orange;
+				border-bottom: 1px solid transparent;
+			}
+		}
+
 
 		.screen-1__content-name  { 
 			color: $white;
@@ -168,15 +178,21 @@ body {
 		.screen-8__select {
 			background-color: #1A2634;
 		}
-		.screen-8__text__address,
-		.screen-8__text__phone,
+		.screen-8__text-address a,
+		.screen-8__text-phone a,
 		.screen-8__name,
 		.screen-8__email,
 		.screen-8__message,
 		.screen-8__links,
 		.screen-8__select {
 			color: #fff;
-	  }
+	  	}
+
+		.screen-8__text-phone a {
+			&:hover {
+			color: $orange;
+			}
+		}
 	  .header {
 
 			@media (max-width: 850px) {
@@ -191,20 +207,104 @@ body {
 	
 }
 .wrapper {
-	height: 100vh;
-	width: 100%;
 	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
+	opacity: 0;
+	transition: opacity .8s ease .5s;
+
+	&.loaded {
+		opacity: 1;
+
+		.header {
+			transition: transform .8s ease .6s;
+			transform: translate(0px, 0px)
+		}
+
+		.page__pagination {
+			opacity: 1;
+			visibility: visible;
+			transition: transform .5s ease .6s;
+			transform: translate(0px, -50%)
+		}
+		.main-screen {
+			opacity: 1;
+		}
+	}
 
 	@media (max-width: 850px) {
-		overflow: visible;
-		height: 100%;
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
 	}
 }
 
 .page {
-	flex: 1 1 auto;
-}
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	margin: 130px 0px 0px 0px;
+	
+	@media (max-width: 1500px) {
+		margin: 80px 0px 0px 0px;
+	}
 
+	@media (max-width: 1400px) {
+		margin: 60px 0px 0px 0px;
+	}
+
+	@media (max-width: 850px) {
+		position: relative;
+		flex: 1 1 auto;
+	}
+
+	@media (max-width: 480px) {
+		margin: 50px 0px 0px 0px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__pagination {
+		position: fixed;
+		left: 60px;
+		top: 50%;
+		transform: translate(-100px, -50%);
+		display: flex;
+		flex-direction: column;
+		opacity: 0;
+		visibility: hidden;
+	
+		@media (max-width: 1400px) {
+			left: 15px;
+		}
+	}
+
+	&__bullet {
+		width: 10px;
+		height: 10px;
+		cursor: pointer;
+		border: 1px solid #5a7797;
+		background-color: transparent;
+		margin: 0px 0px 19px 0px;
+		transition: all .7s;
+	
+		&:last-child {
+			margin: 0;
+		}
+	
+		&--active {
+			background-color: #5a7797;
+		}
+	}
+}
+.screen {
+	position: relative;
+	flex: 1 0 100%;
+}

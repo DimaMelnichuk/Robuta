@@ -25,7 +25,7 @@
 	}
 	
 	@media (max-width: 1250px) {
-		background: none !important;
+		background: linear-gradient(to top, #fcfdff 0%, #eff4fe 100%);
 
 		&.active {
 			background: #131d27 !important;
@@ -36,9 +36,10 @@
 		padding: 0px 0 70px 0;
 	}
 
-	@media (max-width: 650px) {
-		padding: 0px 0 50px 0;
+	@media (max-width: 600px) {
+		padding: 0px 0px 90px 0px;
 	}
+
 	// .screen-7__inner
 
 	&__inner {
@@ -83,6 +84,17 @@
 
 	&__box {
 		position: relative;
+		display: block;
+
+		&:hover {
+			.screen-7__text-title {
+				color: #ffdb66;
+			}
+		}
+
+		&:first-child {
+			margin: 0 0 22px 0;
+		}
 	}
 
 	// .screen-7__img
@@ -114,7 +126,6 @@
 		max-width: 400px;
 		height: 230px;
 		background-color: #aaaaaa;
-		margin: 0 0 22px 0;
 
 		@media (max-width: 1400px) {
 			max-width: 370px;
@@ -146,8 +157,6 @@
 		@media (max-width: 850px) {
 			width: 300px;
 		}
-
-
 	}
 
 	&__text--sm {
@@ -161,7 +170,6 @@
 
 		@media (max-width: 850px) {
 			width: 250px;
-			bottom: 20px;
 		}
 
 		@media (max-width: 600px) {
@@ -200,6 +208,7 @@
 		font-weight: 700;
 		line-height: 30px;
 		margin: 0px 0px 10px 0px;
+		transition: color .3s;
 
 		@media (max-width: 1400px) {
 			font-size: 20px;
@@ -258,10 +267,11 @@
 	// .screen-7__btn
 
 	&__btn {
-		position: absolute;
+		position: relative;
+		z-index: 10;
 		left: 50%;
 		transform: translate(-50%);
-		margin: 50px 0px 0px 0px;
+		margin: 20px 0px 0px 0px;
 		display: inline-block;
 		color: $blue-darken;
 		font-size: 16px;
@@ -275,7 +285,15 @@
 		}
 
 		@media (max-width: 850px) {
-			margin: 5px 0 0 0;
+			margin: 15px 0 0 0;
+		}
+
+		@media (max-width: 600px) {
+			margin: 30px 0px 0px 0px;
+		}
+
+		@media (max-width: 480px) {
+			margin: 25px 0 0 0;
 		}
 
 		span {
