@@ -1,0 +1,28 @@
+.countdown {
+display: flex;
+	// .countdown__time
+
+	&__time {
+		display: flex;
+		align-items: center;
+	}
+
+	// .countdown__item
+
+	&__item {
+		position: relative;
+		display: block;
+		font-size: 13px;
+		font-weight: 400;
+		margin: 0 10px 0 3px;
+
+		&::after {
+			content: ":";
+			position: absolute;
+			right: -6px;
+	 	}
+		span {
+			font-size: 15px;
+		}
+	}
+}

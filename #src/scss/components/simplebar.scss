@@ -1,0 +1,22 @@
+.simplebar-track.simplebar-vertical {
+	background: #fff; // bg line
+	width: 8px;
+}
+.simplebar-scrollbar:before {
+	right: 2px;
+	left: 2px;
+	border-radius: 0px;
+	background: tomato; // bg scroll
+	opacity: 0; // hide scroll
+}
+.simplebar-scrollbar.simplebar-visible:before {
+	opacity: 1; // show scroll
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+	top: 2px;
+	bottom: 2px;
+}
+.simplebar-content-wrapper {
+	padding: 0px 15px 0px 0px;
+	overflow: auto;
+}

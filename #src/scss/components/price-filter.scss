@@ -1,0 +1,106 @@
+.price-filter {
+
+	&__slider {
+		height: 5px;
+		background-color: #DDDDDDFF;
+		margin: 0px 11px 28px;
+		position: relative;
+	
+		&::before,
+		&::after {
+			position: absolute;
+			content: "";
+			background-color: #DDDDDDFF;
+			width: 9px;
+			height: 5px;
+			top: 0;
+		}
+	
+		&::before {
+			left: -9px;
+		}
+	
+		&::after {
+			right: -9px;
+		}
+
+		.noUi-base {
+			position: relative;
+			height: 5px;
+		}
+	
+		.noUi-origin,
+		.noUi-connect  {
+			will-change: transform;
+			position: absolute;
+			width: 10%;
+			z-index: 1;
+			height: 5px;
+			top: 0;
+			right: 0;
+			transform-origin: 0 0;
+			transform-style: flat;
+		}
+	
+		.noUi-connect {
+			background-color: #888888FF;
+			width: 100%;
+			height: 100%;
+		}
+	
+		.noUi-handle {
+			height: 20px;
+			width: 20px;
+			background-color: #fff;
+			border: 1px solid #DDDDDDFF;
+			border-radius: 50%;
+			position: absolute;
+			top: -7.5px;
+			right: -10px;
+			cursor: pointer;
+	
+			&::after {
+				content: "";
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background-color: #FF5959FF;
+				border-radius: 50%;
+			}
+		}
+		
+		.noUi-tooltip {
+			position: absolute;
+			bottom: -20px;
+			left: 50%;
+			transform: translate(-50%, 0%);
+			font-size: 12px;
+		}
+	}
+
+	&__values {
+		display: flex;
+		flex-direction: column;
+		margin: -10px;
+	}
+
+	&__values-column {
+		flex: 0 1 50%;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__values-label {
+		font-size: 12px;
+	}
+
+	&__values-input {
+		flex: 1 1 auto;
+		padding: 0px 0px 0px 15px;
+	}
+
+}

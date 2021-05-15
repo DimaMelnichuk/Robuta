@@ -1,0 +1,163 @@
+//<PAGINATION>====================================================================================================
+.swiper-pagination {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	z-index: 2;
+	display: flex;
+}
+
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	border-radius: 0;
+	background-color: #e1e3e4;
+	opacity: 1;
+	transition: all .3s;
+
+	&:last-child {
+		margin: 0;
+	}
+
+	&-active {
+		background-color: #5a7797;
+	}
+}
+.page__pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+	right: auto;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0px 20px 0px 0px;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+.screen-2__slider-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+	position: relative;
+	left: 61.5%;
+	z-index: 2;
+	width: auto;
+	display: inline-block;
+
+	@media (max-width: 1400px) {
+		
+		bottom: 0px;
+	}
+
+	@media (max-width: 850px) {
+		left: 0;
+	}
+}
+.screen-5__swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+	left: 50%;
+	transform: translate(-70px, 0% );
+
+	@media (max-width: 850px) {
+		transform: translate(-50%, 0% );
+		width: auto;
+	}
+}
+.screen-6__swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets{
+	left: 0;
+	transform: translate(0%, 0%);
+	position: relative;
+}
+//<BUTTONS>====================================================================================================
+.swiper-button-prev,
+.swiper-button-next {
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+	background-color: red;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	color: #fff;
+	border: 2px solid;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:hover {
+		@media (min-width: $md2+px) {
+			color: #019bad;
+
+			&::after {
+				color: #019bad;
+			}
+		}
+	}
+
+	&::after,
+	&::after {
+		position: absolute;
+		font-family: "icons";
+		font-size: 18px;
+	}
+}
+.swiper-button-prev {
+	left: 0;
+
+	&::after {
+		content: "\e911";
+	}
+}
+.swiper-button-next {
+	right: 0;
+
+	&::after {
+		content: "\e910";
+	}
+}
+//<NUMBERS>====================================================================================================
+.counter {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 80px;
+	height: 80px;
+	background-color: $red;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	@media (max-width: 1400px) {
+		width: 70px;
+		height: 70px;
+	}
+
+	@media (max-width: 850px) {
+		display: none;
+	}
+
+	&__current {
+		font-family: Metropolis;
+		font-size: 28px;
+		font-weight: 700;
+		letter-spacing: -0.025em;
+		color: #ffffff;
+	}
+
+	&__total {
+		font-family: Metropolis;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: -0.01em;
+		color: #ffffff;
+		margin: 0px 0px 0px 25px;
+	}
+}
+//<THUMBS>==================================================================================================== 
+.screen-4__dotshead-item.swiper-slide-thumb-active {
+	.screen-4__dotshead-box {
+		color: #ffdb66;
+		transition: color .3s;
+	}
+}

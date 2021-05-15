@@ -1,0 +1,28 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// .pagination__arrow
+
+	&__arrow {
+	}
+
+	// .pagination__list
+
+	&__list {
+		display: flex;
+
+		li {
+
+		}
+	}
+
+	// .pagination__item
+
+	&__item {
+
+		&._active {
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+.breadcrumb {
+	overflow: auto;
+	height: 25px;
+	// .breadcrumb__list
+
+	&__list {
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+
+		li {
+			margin: 0px 10px 0px 0px;
+			padding: 0px 20px 0px 0px;
+			
+			&:last-child {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	// .breadcrumb__link
+
+	&__link {
+		color: #EA4127FF;
+	}
+
+	// .breadcrumb__item
+
+	&__item {
+		color: #dddd;
+	}
+}

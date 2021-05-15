@@ -1,0 +1,43 @@
+.select-poor {
+	position: relative;
+	width: 200px;
+	
+	&::before {
+		content: "\f078";
+		font-family: FontAwesome;
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%);
+		color: #808080;
+		pointer-events: none;
+	}
+
+	// .select-poor__select
+
+	&__select {
+		width: 100%;
+		padding: 15px 40px 15px 15px;
+		border: solid 1px #808080;
+		border-radius: 3px;
+		font-size: 15px;
+		color: #808080;
+		// background: #55e227;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		
+		&:focus {
+		  outline: none;
+		  box-shadow: none;
+		  border: solid 1px #808080;
+		}
+	}
+
+	// .select-poor__option
+
+	&__option {
+/* 		color: blue;
+		background: red; */
+	}
+}

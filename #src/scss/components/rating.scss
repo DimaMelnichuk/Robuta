@@ -1,0 +1,29 @@
+.rating {
+	display: inline-flex;
+	flex-direction: row-reverse;
+
+	&__item {
+		font-size: 13px;
+		color: #cccccc;
+		cursor: pointer;
+		margin: 0px 5px 0px 0px;
+		transition: color .3s;
+
+		&:hover,
+		&:hover ~ .rating__item {
+			color: #e2bc0a;
+		}
+	}
+
+	&__item-icon {
+		font-size: 19px;
+	}
+
+	&[data-total-value="1"] .rating__item:nth-child(n + 5),
+	&[data-total-value="2"] .rating__item:nth-child(n + 4),
+	&[data-total-value="3"] .rating__item:nth-child(n + 3),
+	&[data-total-value="4"] .rating__item:nth-child(n + 2),
+	&[data-total-value="5"] .rating__item:nth-child(n + 1) {
+		color: #e2bc0a;
+	}
+}

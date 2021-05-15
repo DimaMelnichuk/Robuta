@@ -1,0 +1,416 @@
+//<МИКСИНЫ>===============================================================================================
+@import "mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import url(https://fonts.googleapis.com/css?family=Poppins:700&display=swap&subset=cyrillic-ext);
+@import "fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Иконочные шрифты>==========================================================================================
+//@import "icons";
+//</Иконочные шрифты>==========================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: "Metropolis";
+$font-secondary: 'Poppins', sans-serif;
+$font-third: "CallingCode", sans-serif;
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$white: #fff;
+$black: #000;
+$orange: #ffdb66;
+$red: #f25850;
+$blue-darken: #07335d;
+$blue: #0cc7dd;
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+body {
+	color: #07335d;
+	font-size: 14px;
+	&._lock {
+		overflow: hidden;
+	}
+	&.night {
+		background-color: #1A2634;
+		color: #fff;
+
+		button,
+		.main-screen__work-link--sm {
+			color: #fff;
+		}
+
+		.slick-dots button{ 
+			border: 1px solid #fff;
+		}
+
+		.slick-dots li.slick-active button{
+			background-color: #fff;
+		}
+
+		.menu__burger {
+
+			&::before {
+				background-color: #fff;
+			}
+
+			span {
+				background-color: #fff;
+			}
+		}
+		.header {
+			background: #1A2634;
+		}
+		.screen-1__content {
+			background-color: #1A2634;
+		}
+
+		.screen-1__work-link {
+			color: #fff;
+		}
+
+		.main-screen__text-link {
+			color: #fff;
+
+			&:hover {
+				color: #ffdb66;
+				border-bottom: 1px solid transparent;
+			}
+		}
+
+		.screen-1__content-name  { 
+			color: #fff;
+		}
+
+		.screen-3__column {
+			background-color: #1A2634;
+		}
+
+		.screen-4__descr {
+			color: #94afc7;
+		}
+
+		.screen-4__btn {
+			color: #fff;
+		}
+
+		.screen-5-item__box {
+			background-color: #1A2634;
+		}
+
+		.screen-5-item__box-title {
+			color: #fff;
+		}
+
+		.screen-7__text {
+			background-color: #1A2634;
+		}
+
+		.screen-7__btn {
+			color: #fff;
+
+			&:hover {
+				color: #ffdb66;
+			}
+		}
+		.screen-7__text {
+			color: #fff;
+		}
+
+		.screen-8__content {
+			background-color: #1A2634;
+		}
+		.screen-8__select {
+			background-color: #1A2634;
+		}
+		.screen-8__text-address,
+		.screen-8__text-phone a,
+		.screen-8__name,
+		.screen-8__email,
+		.screen-8__message,
+		.screen-8__links,
+		.screen-8__select,
+		.screen-8__copiryght,
+		.select__value {
+			color: #fff;
+	  	}
+
+		.screen-8__text-phone a {
+			&:hover {
+				color: #ffdb66;
+			}
+		}
+		.screen-8__links {
+			&:hover {
+				color: #ffdb66;
+			}
+		}
+	  .header {
+
+			@media (max-width: 850px) {
+				background: #1A2634;
+
+				&::before {
+					background-color: #131d27;
+				}
+			}
+	   }
+
+		.free .header{
+			background: #1A2634;
+
+			&::before {
+				background-color: #131d27;
+			}
+		}
+	}
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	min-height: 100%;
+	opacity: 0;
+	transition: opacity .8s ease .5s;
+	&._loaded {
+		opacity: 1;
+
+		.header {
+			transform: translate(0px, 0px)
+		}
+
+		.page__pagination {
+			opacity: 1;
+			visibility: visible;
+			transform: translate(0px, -50%)
+		}
+		.main-screen__column {
+			transform: translate(0%, 0px);
+			opacity: 1;
+			visibility: visible;
+		}
+
+	}
+	&.free .page__pagination {
+		transition: all 0.3s ease 0s;
+		transform: translate(-100px, -50%);
+		opacity: 0;
+	}
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+._container {
+	padding: 0 60px;
+
+	@media (max-width: 1400px) {
+		padding: 0px 15px;
+	}
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<Библиотеки>==========================================================================================
+@import "libs/swiper";
+//</Библиотеки>==========================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "forms";
+@import "ui";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+@import "header";
+@import "footer";
+@import "home";
+
+@import "blocks/main-screen";
+@import "blocks/screen-1";
+@import "blocks/screen-2";
+@import "blocks/screen-3";
+@import "blocks/screen-4";
+@import "blocks/screen-5";
+@import "blocks/screen-6";
+@import "blocks/screen-7";
+@import "blocks/screen-8";
+
+//<Готовые стили>==========================================================================================
+@import "components/swiper";
+
+//</Готовые стили>==========================================================================================
+
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.page {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+
+	@media (max-width: 850px) {
+		position: relative;
+		flex: 1 1 auto;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__pagination {
+		position: fixed;
+		left: 60px;
+		top: 50%;
+		transform: translate(-100px, -50%);
+		display: flex;
+		flex-direction: column;
+		opacity: 0;
+		visibility: hidden;
+		transition: transform .6s ease .7s;
+	
+		@media (max-width: 1400px) {
+			left: 15px;
+		}
+	}
+
+	&__bullet {
+		width: 10px;
+		height: 10px;
+		cursor: pointer;
+		border: 1px solid #5a7797;
+		background-color: transparent;
+		margin: 0px 0px 19px 0px;
+		transition: all .7s;
+	
+		&:last-child {
+			margin: 0;
+		}
+	
+		&--active {
+			background-color: #5a7797;
+		}
+	}
+}
+.screen {
+	position: relative;
+	flex: 1 0 100%;
+
+	&__content {
+		padding: 130px 60px 0px 60px;
+	
+		@media (max-width: 1500px) {
+			padding: 80px 60px 0px 60px;
+		}
+	
+		@media (max-width: 1400px) {
+			padding: 60px 30px 0px 30px;
+		}
+
+		@media (max-width: 850px) {
+			padding: 60px 15px 0px 15px;
+		}
+	
+		@media (max-width: 480px) {
+			padding: 50px 15px 0px 15px;
+		}
+	}
+}
+.menu-title {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	background: $red;
+	color: #ffffff;
+	font-family: $font-third;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px 24px 5px 7px;
+}
+
+.design {
+	position: absolute;
+	bottom: 30px;
+	left: 60px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+
+	@media (max-width: 1400px) {
+		left: 15px;
+		bottom: 15px;
+	}
+
+	@media (max-width: 850px) {
+		display: none;
+	}
+
+	span {
+		display: block;
+	}
+}
+.text {
+	text-align: center;
+	// .text__title
+
+	&__title {
+		font-family: $font-secondary;
+		@include adaptive-font(40, 30, 40);
+		font-weight: 700;
+		margin: 40px 0px 15px 0px;
+
+		@media (max-width: 1600px) {
+			margin: 30px 0px 15px 0px;
+		}
+
+		@media (max-width: 1400px) {
+			margin: 30px 0px 10px 0px;
+		}
+
+	}
+
+	// .text__descr
+
+	&__descr {
+		color: #5a7797;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		margin: 0px 0px 50px 0px;
+
+		@media (max-width: 1600px) {
+			margin: 0 0 25px 0;
+		}
+
+		@media (max-width: 1400px) {
+			margin: 0px 0px 30px 0px;
+			font-size: 15px;
+		}
+
+		@media (max-width: 480px) {
+			line-height: 20px;
+		}
+	}
+}
+//===================================================================================================================================
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================

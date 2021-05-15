@@ -1,0 +1,20 @@
+.scroll-indicator {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+
+	&__bg {
+		width: 100%;
+		height: 8px;
+		background: #ccc;
+	}
+
+	&__bar {
+		background: linear-gradient(to left,#008a, #008aff, #00ffe7);
+		width: 0%;
+		height: 8px;
+	}
+ }
+
